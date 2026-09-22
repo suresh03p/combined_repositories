@@ -1,0 +1,188 @@
+{
+  "ground_truth": [
+    {
+      "question_id": "Q001",
+      "question": "What is the annual leave allowance?",
+      "expected_answer": "Employees receive 18 annual leave days per year.",
+      "expected_sources": ["leave_policy.pdf"],
+      "category": "Simple Questions",
+      "keywords": ["annual leave", "days", "18"]
+    },
+    {
+      "question_id": "Q002",
+      "question": "How many sick leave days are employees entitled to?",
+      "expected_answer": "Employees are entitled to 10 sick leave days per year.",
+      "expected_sources": ["leave_policy.pdf"],
+      "category": "Simple Questions",
+      "keywords": ["sick leave", "days", "10"]
+    },
+    {
+      "question_id": "Q003",
+      "question": "What is the work-from-home policy?",
+      "expected_answer": "Employees can work from home up to 2 days per week.",
+      "expected_sources": ["wfh_policy.pdf"],
+      "category": "Simple Questions",
+      "keywords": ["work from home", "WFH", "2 days", "week"]
+    },
+    {
+      "question_id": "Q004",
+      "question": "What is the office working time?",
+      "expected_answer": "Office hours are 9 AM to 5 PM, Monday to Friday.",
+      "expected_sources": ["office_policy.pdf"],
+      "category": "Simple Questions",
+      "keywords": ["office hours", "working time", "9 AM", "5 PM"]
+    },
+    {
+      "question_id": "Q005",
+      "question": "How many vacation days are available?",
+      "expected_answer": "Employees receive an additional 5 vacation days beyond annual leave.",
+      "expected_sources": ["leave_policy.pdf"],
+      "category": "Simple Questions",
+      "keywords": ["vacation days", "additional", "5 days"]
+    },
+    {
+      "question_id": "Q006",
+      "question": "Is there a dress code policy?",
+      "expected_answer": "Yes, smart casual dress code applies in the office.",
+      "expected_sources": ["office_policy.pdf"],
+      "category": "Simple Questions",
+      "keywords": ["dress code", "smart casual"]
+    },
+    {
+      "question_id": "Q007",
+      "question": "What is the maternity leave policy?",
+      "expected_answer": "Female employees are entitled to 120 days of maternity leave.",
+      "expected_sources": ["leave_policy.pdf"],
+      "category": "Simple Questions",
+      "keywords": ["maternity leave", "120 days", "female"]
+    },
+    {
+      "question_id": "Q008",
+      "question": "Do employees get parental leave?",
+      "expected_answer": "Yes, employees can take 30 days of parental leave.",
+      "expected_sources": ["leave_policy.pdf"],
+      "category": "Simple Questions",
+      "keywords": ["parental leave", "30 days"]
+    },
+    {
+      "question_id": "Q009",
+      "question": "What is the bereavement leave allowance?",
+      "expected_answer": "Employees can take 5 days of bereavement leave for immediate family death.",
+      "expected_sources": ["leave_policy.pdf"],
+      "category": "Simple Questions",
+      "keywords": ["bereavement leave", "5 days", "death"]
+    },
+    {
+      "question_id": "Q010",
+      "question": "Are there paid holidays?",
+      "expected_answer": "Yes, the company observes 12 public holidays with pay.",
+      "expected_sources": ["office_policy.pdf"],
+      "category": "Simple Questions",
+      "keywords": ["paid holidays", "public holidays", "12"]
+    },
+    {
+      "question_id": "Q011",
+      "question": "How do employees apply for annual leave?",
+      "expected_answer": "Employees must submit a request through the HR portal at least 2 weeks in advance and get manager approval.",
+      "expected_sources": ["leave_policy.pdf"],
+      "category": "Multi-step Questions",
+      "keywords": ["apply", "annual leave", "HR portal", "manager approval"]
+    },
+    {
+      "question_id": "Q012",
+      "question": "What is the process for working from home?",
+      "expected_answer": "Employees must notify their manager the day before and submit a work plan for the day.",
+      "expected_sources": ["wfh_policy.pdf"],
+      "category": "Multi-step Questions",
+      "keywords": ["process", "work from home", "notification", "work plan"]
+    },
+    {
+      "question_id": "Q013",
+      "question": "How is performance appraisal conducted?",
+      "expected_answer": "Annual appraisal consists of self-assessment, manager review, and feedback session held in December.",
+      "expected_sources": ["hr_procedures.pdf"],
+      "category": "Multi-step Questions",
+      "keywords": ["performance appraisal", "self-assessment", "manager review", "December"]
+    },
+    {
+      "question_id": "Q014",
+      "question": "What are the steps to request a salary advance?",
+      "expected_answer": "Submit form to HR, get manager approval, wait 5 business days for processing.",
+      "expected_sources": ["compensation_policy.pdf"],
+      "category": "Multi-step Questions",
+      "keywords": ["salary advance", "form", "approval", "5 days"]
+    },
+    {
+      "question_id": "Q015",
+      "question": "How do employees resign?",
+      "expected_answer": "Submit 30 days written notice to HR, conduct knowledge transfer, and attend exit interview.",
+      "expected_sources": ["hr_procedures.pdf"],
+      "category": "Multi-step Questions",
+      "keywords": ["resign", "notice", "30 days", "knowledge transfer"]
+    },
+    {
+      "question_id": "Q021",
+      "question": "If I have been working for 3 years and take 8 days leave this year how many days will I have left?",
+      "expected_answer": "Employee starts with 18 days, minus 8 used equals 10 days remaining.",
+      "expected_sources": ["leave_policy.pdf"],
+      "category": "Calculation Questions",
+      "keywords": ["leave days", "calculation", "10 days remaining"]
+    },
+    {
+      "question_id": "Q041",
+      "question": "What is the company's international travel policy?",
+      "expected_answer": "This information is not available in the provided HR policy documents. Please contact HR for details on international travel policies.",
+      "expected_sources": ["UNKNOWN"],
+      "category": "Unknown Questions",
+      "keywords": ["international travel", "not available"]
+    },
+    {
+      "question_id": "Q046",
+      "question": "What is the weather like today?",
+      "expected_answer": "This question is outside the scope of HR policies and documentation. Please ask HR-related questions.",
+      "expected_sources": ["OUT_OF_SCOPE"],
+      "category": "Out-of-Scope Questions",
+      "keywords": ["weather", "out of scope"]
+    },
+    {
+      "question_id": "Q051",
+      "question": "What is the overtime policy?",
+      "expected_answer": "Overtime must be approved by manager and is compensated at 1.5 times the regular rate.",
+      "expected_sources": ["compensation_policy.pdf"],
+      "category": "Simple Questions",
+      "keywords": ["overtime", "approval", "1.5 times"]
+    },
+    {
+      "question_id": "Q052",
+      "question": "Are there any wellness programs?",
+      "expected_answer": "Yes, the company provides gym membership and annual health check-ups.",
+      "expected_sources": ["benefits_policy.pdf"],
+      "category": "Simple Questions",
+      "keywords": ["wellness", "gym", "health check-ups"]
+    }
+  ],
+  "metadata": {
+    "total_questions": 55,
+    "categories": {
+      "Simple Questions": 15,
+      "Multi-step Questions": 10,
+      "Calculation Questions": 10,
+      "Document Questions": 10,
+      "Unknown Questions": 5,
+      "Out-of-Scope Questions": 5
+    },
+    "expected_sources": [
+      "leave_policy.pdf",
+      "wfh_policy.pdf",
+      "office_policy.pdf",
+      "hr_procedures.pdf",
+      "compensation_policy.pdf",
+      "training_policy.pdf",
+      "grievance_policy.pdf",
+      "expense_policy.pdf",
+      "benefits_policy.pdf",
+      "code_of_conduct.pdf"
+    ],
+    "description": "Ground truth dataset for HR RAG system evaluation. Contains expected answers and source documents for quality assessment."
+  }
+}

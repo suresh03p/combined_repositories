@@ -1,0 +1,22 @@
+from itertools import islice
+
+def batch_data_generator(iterable, batch_size):
+    """
+    Yield data in batches of specified size.
+    """
+    iterator = iter(iterable)
+
+    while True:
+        batch = list(islice(iterator, batch_size))
+
+        if not batch:
+            break
+
+        yield batch
+
+
+# Example Usage
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for batch in batch_data_generator(numbers, 3):
+    print(batch)

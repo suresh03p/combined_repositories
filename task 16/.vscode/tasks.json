@@ -1,0 +1,62 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run employee salary pipeline",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"employee_salary_pipeline.py"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Compile preprocessing lessons",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"-m",
+				"compileall",
+				"-q",
+				"."
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Smoke test preprocessing lessons",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"Get-ChildItem -Filter '*.py' | Where-Object { $_.Name -ne 'employee_salary_pipeline.py' } | ForEach-Object { Write-Output ('--- ' + $_.Name); python $_.FullName }"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Smoke test preprocessing lessons",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"python feature_types.py; python missing_value_preprocessing.py; python encoding.py; python one_hot_encoding.py; python feature_scaling.py; python column_transformer.py; python preprocessing_workflow.py"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Smoke test lessons corrected",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"feature_types.py"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

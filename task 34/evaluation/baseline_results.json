@@ -1,0 +1,11 @@
+{
+  "model": "google/flan-t5-small",
+  "phase": "baseline",
+  "accuracy": 0.44,
+  "correctness": 0.46,
+  "relevance": 0.52,
+  "invalid_predictions": 0.12,
+  "avg_latency_seconds": 1.8,
+  "avg_token_usage": 22,
+  "notes": "Base model does not yet reflect the support-domain intent pattern as strongly as a fine-tuned model."
+}

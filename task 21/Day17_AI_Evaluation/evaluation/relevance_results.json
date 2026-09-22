@@ -1,0 +1,172 @@
+{
+  "evaluations": [
+    {
+      "question_id": "Q001",
+      "question": "What is the annual leave allowance?",
+      "answer": "Employees receive 18 annual leave days per year.",
+      "category": "Leave Policy",
+      "relevance_score": 1,
+      "relevance_label": "Partially Relevant"
+    },
+    {
+      "question_id": "Q002",
+      "question": "How do I apply for leave?",
+      "answer": "Submit a request through the HR portal at least 2 weeks in advance.",
+      "category": "Leave Policy",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q003",
+      "question": "What is the work-from-home policy?",
+      "answer": "Employees can work from home up to 2 days per week.",
+      "category": "Work Policies",
+      "relevance_score": 1,
+      "relevance_label": "Partially Relevant"
+    },
+    {
+      "question_id": "Q004",
+      "question": "What is the annual leave allowance?",
+      "answer": "The company provides 18 days of leave. Employees can also take sick leave.",
+      "category": "Leave Policy",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q005",
+      "question": "How many vacation days do we get?",
+      "answer": "Employees receive 5 vacation days in addition to annual leave.",
+      "category": "Leave Policy",
+      "relevance_score": 1,
+      "relevance_label": "Partially Relevant"
+    },
+    {
+      "question_id": "Q006",
+      "question": "What is the office dress code?",
+      "answer": "Employees work from 9 AM to 5 PM and smart casual dress is required.",
+      "category": "Office Policies",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q007",
+      "question": "What is the annual leave allowance?",
+      "answer": "The office has 200 employees and located in downtown area.",
+      "category": "Leave Policy",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q008",
+      "question": "How do I apply for leave?",
+      "answer": "The company has a strong commitment to employee wellbeing.",
+      "category": "Leave Policy",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q009",
+      "question": "What is the work-from-home policy?",
+      "answer": "Our CEO founded the company in 2015.",
+      "category": "Work Policies",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q010",
+      "question": "What benefits are included?",
+      "answer": "Our office has excellent parking facilities.",
+      "category": "Benefits",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q011",
+      "question": "What is the maternity leave policy?",
+      "answer": "Female employees are entitled to 120 days of maternity leave.",
+      "category": "Leave Policy",
+      "relevance_score": 1,
+      "relevance_label": "Partially Relevant"
+    },
+    {
+      "question_id": "Q012",
+      "question": "How is performance appraisal done?",
+      "answer": "Annual appraisal consists of self-assessment, manager review, and feedback.",
+      "category": "HR Procedures",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q013",
+      "question": "What are the sick leave benefits?",
+      "answer": "Employees get 10 sick leave days per year.",
+      "category": "Leave Policy",
+      "relevance_score": 1,
+      "relevance_label": "Partially Relevant"
+    },
+    {
+      "question_id": "Q014",
+      "question": "Can I work from home permanently?",
+      "answer": "The work-from-home policy allows 2 days per week from home.",
+      "category": "Work Policies",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q015",
+      "question": "What is the bereavement leave policy?",
+      "answer": "Employees can take 5 days of bereavement leave for immediate family.",
+      "category": "Leave Policy",
+      "relevance_score": 1,
+      "relevance_label": "Partially Relevant"
+    },
+    {
+      "question_id": "Q016",
+      "question": "Are overtime hours paid?",
+      "answer": "Overtime is compensated at 1.5 times the regular rate with manager approval.",
+      "category": "Compensation",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q017",
+      "question": "What wellness programs are available?",
+      "answer": "The company provides gym membership and annual health check-ups.",
+      "category": "Benefits",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q018",
+      "question": "How do I request professional training?",
+      "answer": "Submit a training request to your manager, get approval, and HR processes it.",
+      "category": "Training",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q019",
+      "question": "What is the promotion criteria?",
+      "answer": "We are a growing tech company with innovative solutions.",
+      "category": "Career Development",
+      "relevance_score": 0,
+      "relevance_label": "Not Relevant"
+    },
+    {
+      "question_id": "Q020",
+      "question": "How many public holidays does the company observe?",
+      "answer": "The company observes 12 public holidays with full pay.",
+      "category": "Holidays",
+      "relevance_score": 1,
+      "relevance_label": "Partially Relevant"
+    }
+  ],
+  "summary": {
+    "total": 20,
+    "relevant_count": 0,
+    "partially_relevant_count": 7,
+    "not_relevant_count": 13,
+    "average_score": 0.35,
+    "percentage_relevant": 0.0
+  }
+}

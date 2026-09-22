@@ -1,0 +1,17 @@
+class Employee:
+
+    def calculate_salary(self):
+        print("Basic Salary")
+
+
+class Manager(Employee):
+
+    def calculate_salary(self):
+        print("Salary + Bonus")
+
+
+emp = Employee()
+mgr = Manager()
+
+emp.calculate_salary()
+mgr.calculate_salary()

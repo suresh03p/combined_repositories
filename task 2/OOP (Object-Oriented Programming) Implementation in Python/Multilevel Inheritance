@@ -1,0 +1,23 @@
+class Grandparent:
+
+    def house(self):
+        print("Grandparent House")
+
+
+class Parent(Grandparent):
+
+    def car(self):
+        print("Parent Car")
+
+
+class Child(Parent):
+
+    def bike(self):
+        print("Child Bike")
+
+
+c = Child()
+
+c.house()
+c.car()
+c.bike()

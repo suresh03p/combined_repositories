@@ -1,0 +1,6 @@
+query,expected_document,expected_page
+How many leave days do employees get?,leave_policy.txt,1
+What is the work from home allowance?,wfh_policy.txt,1
+How long is probation?,employee_handbook.txt,1
+What is the reimbursement limit?,reimbursement_policy.txt,1
+When is attendance recorded?,attendance_policy.txt,1

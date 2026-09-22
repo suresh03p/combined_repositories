@@ -1,0 +1,56 @@
+ID,Category,Question,Expected_Answer,Expected_Source,Difficulty
+Q001,Simple Questions,What is the annual leave allowance?,Employees receive 18 annual leave days per year,leave_policy.pdf,Easy
+Q002,Simple Questions,How many sick leave days are employees entitled to?,Employees get 10 sick leave days per year,leave_policy.pdf,Easy
+Q003,Simple Questions,What is the work-from-home policy?,Employees can work from home up to 2 days per week,wfh_policy.pdf,Easy
+Q004,Simple Questions,What is the office working time?,Office hours are 9 AM to 5 PM Monday to Friday,office_policy.pdf,Easy
+Q005,Simple Questions,How many vacation days are available?,Employees receive additional 5 vacation days beyond annual leave,leave_policy.pdf,Easy
+Q006,Simple Questions,Is there a dress code policy?,Smart casual dress code applies in the office,office_policy.pdf,Easy
+Q007,Simple Questions,What is the maternity leave policy?,Female employees are entitled to 120 days maternity leave,leave_policy.pdf,Easy
+Q008,Simple Questions,Do employees get parental leave?,Yes employees can take 30 days parental leave,leave_policy.pdf,Easy
+Q009,Simple Questions,What is the bereavement leave allowance?,Employees can take 5 days for immediate family death,leave_policy.pdf,Easy
+Q010,Simple Questions,Are there paid holidays?,Yes the company observes 12 public holidays with pay,office_policy.pdf,Easy
+Q011,Multi-step Questions,How do employees apply for annual leave?,Employees must submit a request through the HR portal at least 2 weeks in advance and get manager approval,leave_policy.pdf,Medium
+Q012,Multi-step Questions,What is the process for working from home?,Employees must notify their manager the day before and submit a work plan for the day,wfh_policy.pdf,Medium
+Q013,Multi-step Questions,How is performance appraisal conducted?,Annual appraisal consists of self-assessment manager review and feedback session held in December,hr_procedures.pdf,Medium
+Q014,Multi-step Questions,What are the steps to request a salary advance?,Submit form to HR get manager approval wait 5 business days for processing,compensation_policy.pdf,Medium
+Q015,Multi-step Questions,How do employees resign?,Submit 30 days written notice to HR conduct knowledge transfer and attend exit interview,hr_procedures.pdf,Medium
+Q016,Multi-step Questions,What is the promotion criteria?,Minimum 2 years service performance rating above average written exam and interview,career_development.pdf,Medium
+Q017,Multi-step Questions,How do employees transfer between departments?,Submit transfer request to current manager then to HR get new manager approval then complete onboarding,hr_procedures.pdf,Medium
+Q018,Multi-step Questions,What is the grievance procedure?,Report to manager if unresolved escalate to HR follow formal investigation process,grievance_policy.pdf,Medium
+Q019,Multi-step Questions,How to apply for professional development training?,Identify course get manager approval submit to HR training department receives approval within 2 weeks,training_policy.pdf,Medium
+Q020,Multi-step Questions,What is the expense reimbursement process?,Submit receipt and expense form to manager get approval send to finance department reimbursement within 15 days,expense_policy.pdf,Medium
+Q021,Calculation Questions,If I have been working for 3 years and take 8 days leave this year how many days will I have left?,Employee starts with 18 days minus 8 used = 10 days remaining,leave_policy.pdf,Medium
+Q022,Calculation Questions,What is my total leave entitlement if I joined on July 1st this year?,Employees joining mid-year get 9 days for remaining 6 months of the year,leave_policy.pdf,Medium
+Q023,Calculation Questions,If I work from home 2 days per week how many office days per week?,Working 5 days per week minus 2 WFH days = 3 office days,wfh_policy.pdf,Medium
+Q024,Calculation Questions,How many hours per month should an employee work if office hours are 9-5?,8 hours per day times 22 working days = 176 hours per month,office_policy.pdf,Medium
+Q025,Calculation Questions,If annual salary is 600000 and bonus is 2 months what is total compensation?,600000 plus 2 months salary 100000 = 700000 total,compensation_policy.pdf,Medium
+Q026,Calculation Questions,How many days of notice required for different leave types?,Annual leave requires 2 weeks notice sick leave requires same-day notice,leave_policy.pdf,Medium
+Q027,Calculation Questions,What is the financial impact of 5 days WFH allowance per month?,5 days times 12 months = 60 office days saved per year,wfh_policy.pdf,Medium
+Q028,Calculation Questions,If training costs 5000 per employee and 20 employees are trained what is total cost?,5000 times 20 = 100000 total training investment,training_policy.pdf,Medium
+Q029,Calculation Questions,How much notice is required for a departmental transfer?,Standard 30 days notice required same as resignation,hr_procedures.pdf,Medium
+Q030,Calculation Questions,What is the total benefit package cost if basic salary is 500000?,Benefits typically add 15-20 percent so 75000 to 100000 additional value,compensation_policy.pdf,Medium
+Q031,Document Questions,What does the leave policy PDF cover?,Annual leave sick leave maternity leave parental leave bereavement leave and leave application procedures,leave_policy.pdf,Easy
+Q032,Document Questions,What does the work-from-home policy document include?,WFH eligibility conditions approval process and communication requirements,wfh_policy.pdf,Easy
+Q033,Document Questions,What information is in the office policy?,Office hours dress code parking facilities and workplace conduct,office_policy.pdf,Easy
+Q034,Document Questions,What does the HR procedures manual cover?,Recruitment appraisal transfer resignation and grievance procedures,hr_procedures.pdf,Easy
+Q035,Document Questions,What is detailed in the compensation policy?,Salary structure bonuses benefits and allowances,compensation_policy.pdf,Easy
+Q036,Document Questions,What does the training and development policy contain?,Training types approval process cost coverage and career development paths,training_policy.pdf,Easy
+Q037,Document Questions,What information is in the grievance policy?,Types of grievances procedure timelines and resolution mechanisms,grievance_policy.pdf,Easy
+Q038,Document Questions,What does the expense policy document specify?,Reimbursable expenses documentation requirements and approval process,expense_policy.pdf,Easy
+Q039,Document Questions,What is covered under the benefits policy?,Health insurance dental coverage pension and wellness programs,benefits_policy.pdf,Easy
+Q040,Document Questions,What does the code of conduct document include?,Professional behavior ethics confidentiality and compliance requirements,code_of_conduct.pdf,Easy
+Q041,Unknown Questions,What is the company's international travel policy?,The system should indicate this information is not available in the provided documents,UNKNOWN,Hard
+Q042,Unknown Questions,What is the policy for employee stock options?,The system should indicate this information is not available in the provided documents,UNKNOWN,Hard
+Q043,Unknown Questions,Does the company provide housing allowance?,The system should indicate this information is not available in the provided documents,UNKNOWN,Hard
+Q044,Unknown Questions,What are the company's overtime payment policies?,The system should indicate this information is not available in the provided documents,UNKNOWN,Hard
+Q045,Unknown Questions,Is there a flexible benefits program?,The system should indicate this information is not available in the provided documents,UNKNOWN,Hard
+Q046,Out-of-Scope Questions,What is the weather like today?,This question is outside the scope of HR policies and documentation,OUT_OF_SCOPE,Hard
+Q047,Out-of-Scope Questions,What are the company's product specifications?,This is a sales or product question not HR related,OUT_OF_SCOPE,Hard
+Q048,Out-of-Scope Questions,How do I use the company email system?,This is an IT question not an HR policy question,OUT_OF_SCOPE,Hard
+Q049,Out-of-Scope Questions,What is the company's quarterly financial performance?,This is a finance question not HR related,OUT_OF_SCOPE,Hard
+Q050,Out-of-Scope Questions,What programming languages do we use?,This is a technical question not an HR policy question,OUT_OF_SCOPE,Hard
+Q051,Simple Questions,What is the overtime policy?,Overtime must be approved by manager and is compensated at 1.5 times regular rate,compensation_policy.pdf,Easy
+Q052,Simple Questions,Are there any wellness programs?,Yes the company provides gym membership and health check-ups annually,benefits_policy.pdf,Easy
+Q053,Multi-step Questions,How to apply for a transfer between offices in different cities?,Submit transfer request to current manager get HR approval arrange relocation assistance complete new office onboarding,hr_procedures.pdf,Medium
+Q054,Document Questions,What are the types of leave available to employees?,Annual leave sick leave maternity leave parental leave and bereavement leave,leave_policy.pdf,Easy
+Q055,Calculation Questions,If an employee works 6 days per month from office and works from home on Tuesday and Thursday what is their schedule?,2 days WFH per week times 4 weeks = 8 WFH days per month,wfh_policy.pdf,Medium

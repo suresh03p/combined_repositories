@@ -1,0 +1,22 @@
+[
+  {"question": "What is the invoice total?", "expected_answer": "11800", "document": "invoice_001.png", "category": "Direct extraction"},
+  {"question": "What is the invoice number?", "expected_answer": "INV-1001", "document": "invoice_001.png", "category": "Direct extraction"},
+  {"question": "Who is the customer?", "expected_answer": "ABC Technologies", "document": "invoice_001.png", "category": "Document understanding"},
+  {"question": "When was the invoice issued?", "expected_answer": "2026-09-21", "document": "invoice_001.png", "category": "Document understanding"},
+  {"question": "What is the tax amount?", "expected_answer": "1800", "document": "invoice_001.png", "category": "Direct extraction"},
+  {"question": "What is the subtotal?", "expected_answer": "10000", "document": "invoice_001.png", "category": "Table questions"},
+  {"question": "What product appears in the table?", "expected_answer": "Laptop", "document": "invoice_002.png", "category": "Table questions"},
+  {"question": "Describe the image.", "expected_answer": "A document containing invoice details.", "document": "invoice_003.png", "category": "Visual questions"},
+  {"question": "What objects are visible?", "expected_answer": "Document, text, table", "document": "invoice_004.png", "category": "Visual questions"},
+  {"question": "Is this an invoice or a receipt?", "expected_answer": "invoice", "document": "invoice_005.png", "category": "Document understanding"},
+  {"question": "What is the customer GST number?", "expected_answer": "not found", "document": "invoice_006.png", "category": "Unknown questions"},
+  {"question": "Which company is billed?", "expected_answer": "ABC Technologies", "document": "invoice_001.png", "category": "Direct extraction"},
+  {"question": "How many items are listed?", "expected_answer": "3", "document": "table_001.png", "category": "Table questions"},
+  {"question": "What is the total before tax?", "expected_answer": "10000", "document": "invoice_001.png", "category": "Direct extraction"},
+  {"question": "What is the payment status?", "expected_answer": "not found", "document": "invoice_007.png", "category": "Unknown questions"},
+  {"question": "What is the date on the receipt?", "expected_answer": "2026-09-22", "document": "receipt_001.png", "category": "Document understanding"},
+  {"question": "What is the amount due?", "expected_answer": "11800", "document": "invoice_001.png", "category": "Direct extraction"},
+  {"question": "What is the wrong invoice number?", "expected_answer": "not found", "document": "invoice_008.png", "category": "Incorrect questions"},
+  {"question": "What is shown in the screenshot?", "expected_answer": "dashboard summary", "document": "screenshot_001.png", "category": "Visual questions"},
+  {"question": "What is the customer address?", "expected_answer": "not found", "document": "invoice_009.png", "category": "Unknown questions"}
+]

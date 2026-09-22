@@ -1,0 +1,162 @@
+{
+  "evaluations": [
+    {
+      "question_id": "Q001",
+      "question": "What is the annual leave allowance?",
+      "context": "Employees receive 18 annual leave days per year.",
+      "answer": "You get 18 days of annual leave.",
+      "category": "Leave Policy",
+      "faithfulness_score": 1,
+      "faithfulness_label": "Partially Faithful",
+      "overlap_percentage": 66.7
+    },
+    {
+      "question_id": "Q002",
+      "question": "What is the WFH policy?",
+      "context": "Employees can work from home up to 2 days per week.",
+      "answer": "The policy allows 2 days per week working from home.",
+      "category": "Work Policies",
+      "faithfulness_score": 0,
+      "faithfulness_label": "Unsupported",
+      "overlap_percentage": 28.6
+    },
+    {
+      "question_id": "Q003",
+      "question": "What is the maternity leave?",
+      "context": "Female employees are entitled to 120 days of maternity leave.",
+      "answer": "Maternity leave is 120 days for female employees.",
+      "category": "Leave Policy",
+      "faithfulness_score": 1,
+      "faithfulness_label": "Partially Faithful",
+      "overlap_percentage": 60.0
+    },
+    {
+      "question_id": "Q004",
+      "question": "What leave is available?",
+      "context": "Annual leave is 18 days. Sick leave is 10 days.",
+      "answer": "Annual leave is 18 days, sick leave is 10 days, and vacation is 5 days.",
+      "category": "Leave Policy",
+      "faithfulness_score": 1,
+      "faithfulness_label": "Partially Faithful",
+      "overlap_percentage": 66.7
+    },
+    {
+      "question_id": "Q005",
+      "question": "What is the WFH policy?",
+      "context": "Employees can work from home 2 days per week with manager approval.",
+      "answer": "Work from home is allowed 2 days weekly. You can work from home whenever needed.",
+      "category": "Work Policies",
+      "faithfulness_score": 1,
+      "faithfulness_label": "Partially Faithful",
+      "overlap_percentage": 50.0
+    },
+    {
+      "question_id": "Q006",
+      "question": "What is the annual leave allowance?",
+      "context": "Employees receive 18 annual leave days per year.",
+      "answer": "Employees get 30 days of annual leave.",
+      "category": "Leave Policy",
+      "faithfulness_score": 1,
+      "faithfulness_label": "Partially Faithful",
+      "overlap_percentage": 75.0
+    },
+    {
+      "question_id": "Q007",
+      "question": "What is the WFH policy?",
+      "context": "Employees can work from home up to 2 days per week.",
+      "answer": "Employees can work from home every day without restrictions.",
+      "category": "Work Policies",
+      "faithfulness_score": 1,
+      "faithfulness_label": "Partially Faithful",
+      "overlap_percentage": 57.1
+    },
+    {
+      "question_id": "Q008",
+      "question": "What about benefits?",
+      "context": "The company provides gym membership.",
+      "answer": "We offer gym membership, dental insurance, pension plans, and stock options.",
+      "category": "Benefits",
+      "faithfulness_score": 0,
+      "faithfulness_label": "Unsupported",
+      "overlap_percentage": 0.0
+    },
+    {
+      "question_id": "Q009",
+      "question": "What is the dress code?",
+      "context": "Smart casual dress code applies in the office.",
+      "answer": "Formal business wear is required at all times.",
+      "category": "Office Policies",
+      "faithfulness_score": 0,
+      "faithfulness_label": "Unsupported",
+      "overlap_percentage": 0.0
+    },
+    {
+      "question_id": "Q010",
+      "question": "What is the salary increase?",
+      "context": "Annual salary reviews are conducted in December.",
+      "answer": "All employees receive a 10 percent annual salary increase.",
+      "category": "Compensation",
+      "faithfulness_score": 0,
+      "faithfulness_label": "Unsupported",
+      "overlap_percentage": 33.3
+    },
+    {
+      "question_id": "Q011",
+      "question": "What about sick leave?",
+      "context": "Employees are entitled to 10 sick leave days per year.",
+      "answer": "You get 10 days of sick leave annually.",
+      "category": "Leave Policy",
+      "faithfulness_score": 1,
+      "faithfulness_label": "Partially Faithful",
+      "overlap_percentage": 75.0
+    },
+    {
+      "question_id": "Q012",
+      "question": "Performance appraisal process?",
+      "context": "Annual appraisal consists of self-assessment, manager review, and feedback session.",
+      "answer": "The appraisal includes self-assessment and manager feedback.",
+      "category": "HR Procedures",
+      "faithfulness_score": 0,
+      "faithfulness_label": "Unsupported",
+      "overlap_percentage": 40.0
+    },
+    {
+      "question_id": "Q013",
+      "question": "International travel policy?",
+      "context": "For international travel, employees must notify HR and get approval.",
+      "answer": "All international travel is fully funded by the company.",
+      "category": "Travel",
+      "faithfulness_score": 0,
+      "faithfulness_label": "Unsupported",
+      "overlap_percentage": 20.0
+    },
+    {
+      "question_id": "Q014",
+      "question": "Promotion criteria?",
+      "context": "Minimum 2 years service with performance rating above average.",
+      "answer": "Anyone can be promoted immediately regardless of performance.",
+      "category": "Career Development",
+      "faithfulness_score": 0,
+      "faithfulness_label": "Unsupported",
+      "overlap_percentage": 0.0
+    },
+    {
+      "question_id": "Q015",
+      "question": "What about wellness?",
+      "context": "The company provides gym membership and annual health check-ups.",
+      "answer": "Wellness programs include gym access and health screening.",
+      "category": "Benefits",
+      "faithfulness_score": 0,
+      "faithfulness_label": "Unsupported",
+      "overlap_percentage": 16.7
+    }
+  ],
+  "summary": {
+    "total": 15,
+    "faithful_count": 0,
+    "partial_count": 7,
+    "unsupported_count": 8,
+    "percentage_faithful": 0.0,
+    "average_overlap": 39.27333333333333
+  }
+}

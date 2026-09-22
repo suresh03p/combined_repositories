@@ -1,0 +1,88 @@
+"""
+magic_methods.py
+
+Demonstrates:
+__str__
+__repr__
+__len__
+__eq__
+__lt__
+__gt__
+__add__
+__sub__
+"""
+class Employee:
+
+    def __init__(self, emp_id, name, salary):
+        self.emp_id = emp_id
+        self.name = name
+        self.salary = salary
+
+    # User-friendly representation
+    def __str__(self):
+        return f"Employee(ID={self.emp_id}, Name={self.name}, Salary={self.salary})"
+
+    # Developer-friendly representation
+    def __repr__(self):
+        return f"Employee({self.emp_id}, '{self.name}', {self.salary})"
+
+    # Length of employee name
+    def __len__(self):
+        return len(self.name)
+
+    # Compare salary equality
+    def __eq__(self, other):
+        return self.salary == other.salary
+
+    # Less than comparison
+    def __lt__(self, other):
+        return self.salary < other.salary
+
+    # Greater than comparison
+    def __gt__(self, other):
+        return self.salary > other.salary
+
+    # Add salaries
+    def __add__(self, other):
+        return self.salary + other.salary
+
+    # Salary difference
+    def __sub__(self, other):
+        return self.salary - other.salary
+
+
+# Create objects
+emp1 = Employee(101, "Suresh", 50000)
+emp2 = Employee(102, "Ravi", 60000)
+
+# __str__
+print("STR:")
+print(emp1)
+
+# __repr__
+print("\nREPR:")
+print(repr(emp1))
+
+# __len__
+print("\nLEN:")
+print(len(emp1))
+
+# __eq__
+print("\nEQ:")
+print(emp1 == emp2)
+
+# __lt__
+print("\nLT:")
+print(emp1 < emp2)
+
+# __gt__
+print("\nGT:")
+print(emp1 > emp2)
+
+# __add__
+print("\nADD:")
+print(emp1 + emp2)
+
+# __sub__
+print("\nSUB:")
+print(emp2 - emp1)

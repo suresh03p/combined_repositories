@@ -1,0 +1,5 @@
+2025-08-01 INFO Auth User login successful response_time=120
+2025-08-01 ERROR Payment Payment failed response_time=350
+2025-08-01 WARNING API Slow response response_time=500
+2025-08-01 INFO Order Order created successfully response_time=150
+2025-08-01 ERROR Auth Invalid credentials response_time=220

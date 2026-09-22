@@ -1,0 +1,311 @@
+"""
+coding_challenges.py
+
+1. Student Class
+2. Bank Account Class
+3. Employee Management
+4. Vehicle Inheritance
+5. Shape Area Calculator
+6. Shopping Cart
+7. Movie Rating System
+8. Hospital Patient Records
+9. School Result Processing
+10. Online Course Management
+"""
+
+# ==================================================
+# 1. Student Class
+# ==================================================
+
+class Student:
+
+    def __init__(self, student_id, name, marks):
+        self.student_id = student_id
+        self.name = name
+        self.marks = marks
+
+    def display(self):
+        print(f"ID: {self.student_id}")
+        print(f"Name: {self.name}")
+        print(f"Marks: {self.marks}")
+
+
+student = Student(101, "Suresh", 95)
+student.display()
+
+print("-" * 40)
+
+# ==================================================
+# 2. Bank Account Class
+# ==================================================
+
+class BankAccount:
+
+    def __init__(self, account_no, balance):
+        self.account_no = account_no
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+        else:
+            print("Insufficient Balance")
+
+    def show_balance(self):
+        print("Balance:", self.balance)
+
+
+account = BankAccount(1001, 5000)
+
+account.deposit(2000)
+account.withdraw(1000)
+
+account.show_balance()
+
+print("-" * 40)
+
+# ==================================================
+# 3. Employee Management
+# ==================================================
+
+class Employee:
+
+    def __init__(self, emp_id, name, salary):
+        self.emp_id = emp_id
+        self.name = name
+        self.salary = salary
+
+    def display(self):
+        print(
+            f"Employee: {self.name}, "
+            f"Salary: {self.salary}"
+        )
+
+
+emp = Employee(1, "Ravi", 50000)
+emp.display()
+
+print("-" * 40)
+
+# ==================================================
+# 4. Vehicle Inheritance
+# ==================================================
+
+class Vehicle:
+
+    def start(self):
+        print("Vehicle Started")
+
+
+class Car(Vehicle):
+
+    def start(self):
+        print("Car Started")
+
+
+class Bike(Vehicle):
+
+    def start(self):
+        print("Bike Started")
+
+
+car = Car()
+bike = Bike()
+
+car.start()
+bike.start()
+
+print("-" * 40)
+
+# ==================================================
+# 5. Shape Area Calculator
+# ==================================================
+
+from abc import ABC, abstractmethod
+
+
+class Shape(ABC):
+
+    @abstractmethod
+    def area(self):
+        pass
+
+
+class Rectangle(Shape):
+
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+
+class Circle(Shape):
+
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+
+rect = Rectangle(10, 5)
+circle = Circle(7)
+
+print("Rectangle Area:", rect.area())
+print("Circle Area:", round(circle.area(), 2))
+
+print("-" * 40)
+
+# ==================================================
+# 6. Shopping Cart
+# ==================================================
+
+class ShoppingCart:
+
+    def __init__(self):
+        self.items = []
+
+    def add_item(self, item, price):
+        self.items.append((item, price))
+
+    def total_amount(self):
+
+        total = 0
+
+        for item, price in self.items:
+            total += price
+
+        return total
+
+
+cart = ShoppingCart()
+
+cart.add_item("Laptop", 50000)
+cart.add_item("Mouse", 500)
+
+print("Total Amount:", cart.total_amount())
+
+print("-" * 40)
+
+# ==================================================
+# 7. Movie Rating System
+# ==================================================
+
+class Movie:
+
+    def __init__(self, title):
+        self.title = title
+        self.ratings = []
+
+    def add_rating(self, rating):
+        self.ratings.append(rating)
+
+    def average_rating(self):
+        return sum(self.ratings) / len(self.ratings)
+
+
+movie = Movie("Pushpa")
+
+movie.add_rating(5)
+movie.add_rating(4)
+movie.add_rating(3)
+
+print("Average Rating:", movie.average_rating())
+
+print("-" * 40)
+
+# ==================================================
+# 8. Hospital Patient Records
+# ==================================================
+
+class Patient:
+
+    def __init__(self, patient_id, name, disease):
+        self.patient_id = patient_id
+        self.name = name
+        self.disease = disease
+
+    def display(self):
+        print(
+            f"Patient: {self.name}, "
+            f"Disease: {self.disease}"
+        )
+
+
+patient = Patient(
+    501,
+    "Kiran",
+    "Fever"
+)
+
+patient.display()
+
+print("-" * 40)
+
+# ==================================================
+# 9. School Result Processing
+# ==================================================
+
+class StudentResult:
+
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def grade(self):
+
+        if self.marks >= 90:
+            return "A"
+
+        elif self.marks >= 75:
+            return "B"
+
+        elif self.marks >= 50:
+            return "C"
+
+        return "Fail"
+
+
+result = StudentResult(
+    "Suresh",
+    88
+)
+
+print("Grade:", result.grade())
+
+print("-" * 40)
+
+# ==================================================
+# 10. Online Course Management
+# ==================================================
+
+class Course:
+
+    def __init__(self, course_name):
+        self.course_name = course_name
+        self.students = []
+
+    def enroll(self, student):
+        self.students.append(student)
+
+    def show_students(self):
+        print("Course:", self.course_name)
+
+        for student in self.students:
+            print(student)
+
+
+course = Course("Python Programming")
+
+course.enroll("Suresh")
+course.enroll("Ravi")
+course.enroll("Kiran")
+
+course.show_students()
+
+print("-" * 40)

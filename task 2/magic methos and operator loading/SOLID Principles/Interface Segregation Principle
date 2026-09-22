@@ -1,0 +1,39 @@
+from abc import ABC, abstractmethod
+
+
+class Workable(ABC):
+
+    @abstractmethod
+    def work(self):
+        pass
+
+
+class Eatable(ABC):
+
+    @abstractmethod
+    def eat(self):
+        pass
+
+
+class Human(Workable, Eatable):
+
+    def work(self):
+        print("Human Working")
+
+    def eat(self):
+        print("Human Eating")
+
+
+class Robot(Workable):
+
+    def work(self):
+        print("Robot Working")
+
+
+human = Human()
+robot = Robot()
+
+human.work()
+human.eat()
+
+robot.work()

@@ -1,0 +1,9 @@
+import csv
+
+def csv_reader_generator(c:\Users\Admin\Downloads\customers-100.csv):
+    """
+    Yield one row from a CSV file at a time as a dictionary.
+    """
+    with open(file_path, 'r', newline='', encoding='utf-8') as csvfile:
+        reader = csv.DictReader(csvfile)
+        yield from reader

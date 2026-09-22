@@ -1,0 +1,18 @@
+EmployeeID,FirstName,LastName,Age,Salary,JoiningDate,Department,Experience,Email,City
+1,John,Doe,34,58000,2019-09-15,IT,5,john.doe@example.com,New York
+2,Jane,Smith,29,62000,2020-03-22,HR,3,jane.smith@@example.com,Los Angeles
+3,Mike,Johnson,,72000,2018/01/10,Finance,6,mike.johnson@example.com,
+4,Emily,Davis,41,fifty thousand,2017-07-01,IT,10,emily.davis@example.com,Chicago
+5,David,Brown,28,48000,2023-11-05,Sales,2,david.brown@example.com,Houston
+6,Sarah,Wilson,32.0,54000,2021-05-30,HR,4,sarah.wilson@example.com,Seattle
+7,Chris,Lee,37,59000.00,2016-10-20,IT,7,chris.lee@example.com,Boston
+8,Anna,Kim,24,,2022-01-15,Marketing,1,anna.kim@example.com,Miami
+9,John,Doe,34,58000,2019-09-15,IT,5,john.doe@example.com,New York
+10,Matt,Garcia,55,110000,2012-03-01,Finance,20,matt.garcia@example.com,Dallas
+11,Nina,Patel,30,68000,2021-08-12,IT,3,,Austin
+12,Luke,Clark,67,95000,2010-02-14,Finance,25,luke.clark@example.com,Chicago
+13,Olivia,Hall,22,42000,2024-04-01,Marketing,,olivia.hall@example.com,San Francisco
+14,Steve,Moore,38,87000,2014-06-18,Sales,12,steve.moore@example.com,Phoenix
+15,Jane,Smith,29,62000,2020-03-22,HR,3,jane.smith@@example.com,Los Angeles
+16,Chloe,Turner,31,56000,2019-12-01,IT,5,chloe.turner@example.com,Denver
+17,Raj,Singh,104,130000,2015-09-24,Finance,30,raj.singh@example.com,San Jose

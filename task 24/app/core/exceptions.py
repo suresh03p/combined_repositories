@@ -1,0 +1,2 @@
+class SecurityViolation(Exception):
+    pass

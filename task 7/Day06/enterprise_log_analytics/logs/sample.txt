@@ -1,0 +1,3 @@
+2026-08-03T09:00:00Z | INFO | User login successful
+2026-08-03T09:02:00Z | ERROR | ERR-101 user login failed
+2026-08-03T09:03:00Z | ERROR | ERR-102 invalid token

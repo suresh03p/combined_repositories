@@ -1,0 +1,10 @@
+{
+  "total_tests": 10,
+  "passed": 1,
+  "failed": 9,
+  "average_quality": 0.86,
+  "groundedness_score": 0.8,
+  "relevance_score": 0.7,
+  "hallucination_rate": 0.9,
+  "retrieval_accuracy": 1.0
+}

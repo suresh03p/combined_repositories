@@ -1,0 +1,4 @@
+2025-08-01 INFO Server Server started response_time=80
+2025-08-01 ERROR Server Internal server error response_time=600
+2025-08-01 WARNING DB Database timeout response_time=450
+2025-08-01 INFO API Request processed response_time=100

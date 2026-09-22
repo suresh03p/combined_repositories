@@ -1,0 +1,11 @@
+Company Policy
+
+The company expects employees to act with integrity, protect confidential information, and use company resources for legitimate business purposes. Employees should make decisions that are lawful, respectful, and consistent with the company's values. A policy is not a substitute for good judgment: when a situation is unclear, the employee should pause and ask the manager, HR, Legal, or Security team that owns the relevant decision.
+
+Confidential information includes customer data, employee records, financial plans, source code, credentials, contracts, and non-public business strategy. Employees should access only the information needed for their work, use approved systems, and check recipients before sending sensitive material. Passwords, access tokens, and security codes must never be shared. Suspected phishing, lost equipment, accidental disclosure, or unauthorized access should be reported immediately through the security incident channel.
+
+Company equipment and accounts should be used responsibly. Employees may use approved software and must follow licensing, security, and data-handling requirements. Installing unapproved software, copying company data to a personal account, or bypassing access controls creates risk and may violate policy. Work products should be stored in the approved repository so the team can maintain continuity and recover information.
+
+Conflicts of interest should be disclosed when a personal relationship, outside activity, gift, investment, or other interest could affect a business decision or appear to affect it. Employees should not accept gifts that influence procurement, hiring, or customer decisions. The manager and Legal or Compliance team can advise on disclosure and recusal.
+
+The company also expects respectful communication. Meetings, written messages, and collaboration spaces should be professional and inclusive. Concerns about conduct, security, privacy, or compliance should be raised early. Reports made in good faith are reviewed without retaliation. Policy violations may result in coaching, access changes, or formal action depending on the facts and applicable rules. The official policy library contains the current version and owners for each policy.

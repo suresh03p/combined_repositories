@@ -1,0 +1,28 @@
+{
+  "api_response_time_report": {
+    "collected_endpoints": 3,
+    "successful_endpoints": 3
+  },
+  "success_vs_failure_report": {
+    "success_count": 3,
+    "failure_count": 0
+  },
+  "data_volume_report": {
+    "processed_record_count": 700,
+    "aggregate": {
+      "total_records": 700,
+      "record_keys": [
+        "body",
+        "email",
+        "id",
+        "name",
+        "postId",
+        "title",
+        "userId"
+      ]
+    }
+  },
+  "processing_time_report": {
+    "processing_seconds": 1.751
+  }
+}

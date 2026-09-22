@@ -1,0 +1,189 @@
+{
+  "traces": [
+    {
+      "trace_id": "TR-001",
+      "timestamp": "2026-09-01T13:40:35.497526",
+      "user_question": "What is the annual leave policy?",
+      "agents_used": [
+        "RAG"
+      ],
+      "tools_used": [
+        "rag_search"
+      ],
+      "num_steps": 2,
+      "total_time": 3.4,
+      "success": true,
+      "answer": ""
+    },
+    {
+      "trace_id": "TR-002",
+      "timestamp": "2026-09-01T13:40:35.497526",
+      "user_question": "How do I apply for leave?",
+      "agents_used": [
+        "RAG"
+      ],
+      "tools_used": [
+        "rag_search"
+      ],
+      "num_steps": 3,
+      "total_time": 3.8,
+      "success": true,
+      "answer": ""
+    },
+    {
+      "trace_id": "TR-003",
+      "timestamp": "2026-09-01T13:40:35.497526",
+      "user_question": "Calculate my remaining leave",
+      "agents_used": [
+        "RAG",
+        "Calculator"
+      ],
+      "tools_used": [
+        "rag_search",
+        "calculate"
+      ],
+      "num_steps": 5,
+      "total_time": 4.2,
+      "success": true,
+      "answer": ""
+    },
+    {
+      "trace_id": "TR-004",
+      "timestamp": "2026-09-01T13:40:35.497526",
+      "user_question": "What is the WFH policy?",
+      "agents_used": [
+        "RAG"
+      ],
+      "tools_used": [
+        "rag_search"
+      ],
+      "num_steps": 2,
+      "total_time": 3.1,
+      "success": true,
+      "answer": ""
+    },
+    {
+      "trace_id": "TR-005",
+      "timestamp": "2026-09-01T13:40:35.497526",
+      "user_question": "Policy combination question",
+      "agents_used": [
+        "RAG",
+        "Reasoner"
+      ],
+      "tools_used": [
+        "rag_search",
+        "reason"
+      ],
+      "num_steps": 4,
+      "total_time": 5.0,
+      "success": true,
+      "answer": ""
+    },
+    {
+      "trace_id": "TR-006",
+      "timestamp": "2026-09-01T13:40:35.497526",
+      "user_question": "Complex benefits query",
+      "agents_used": [
+        "RAG",
+        "Aggregator"
+      ],
+      "tools_used": [
+        "rag_search",
+        "aggregate"
+      ],
+      "num_steps": 6,
+      "total_time": 6.2,
+      "success": true,
+      "answer": ""
+    },
+    {
+      "trace_id": "TR-007",
+      "timestamp": "2026-09-01T13:40:35.497526",
+      "user_question": "Unknown policy",
+      "agents_used": [
+        "RAG"
+      ],
+      "tools_used": [
+        "rag_search"
+      ],
+      "num_steps": 2,
+      "total_time": 2.8,
+      "success": false,
+      "answer": ""
+    },
+    {
+      "trace_id": "TR-008",
+      "timestamp": "2026-09-01T13:40:35.497526",
+      "user_question": "Leave calculation",
+      "agents_used": [
+        "Calculator"
+      ],
+      "tools_used": [
+        "calculate"
+      ],
+      "num_steps": 1,
+      "total_time": 1.5,
+      "success": true,
+      "answer": ""
+    },
+    {
+      "trace_id": "TR-009",
+      "timestamp": "2026-09-01T13:40:35.497526",
+      "user_question": "Multi-step reasoning",
+      "agents_used": [
+        "RAG",
+        "Calculator",
+        "Reasoner"
+      ],
+      "tools_used": [
+        "rag_search",
+        "calculate",
+        "reason"
+      ],
+      "num_steps": 7,
+      "total_time": 7.1,
+      "success": true,
+      "answer": ""
+    },
+    {
+      "trace_id": "TR-010",
+      "timestamp": "2026-09-01T13:40:35.497526",
+      "user_question": "Simple office hours",
+      "agents_used": [
+        "RAG"
+      ],
+      "tools_used": [
+        "rag_search"
+      ],
+      "num_steps": 1,
+      "total_time": 2.5,
+      "success": true,
+      "answer": ""
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "successful": 9,
+    "success_rate": 0.9,
+    "avg_steps": 3.3,
+    "avg_time": 3.96,
+    "agents_performance": {
+      "RAG": {
+        "count": 9,
+        "success": 8
+      },
+      "Calculator": {
+        "count": 3,
+        "success": 3
+      },
+      "Reasoner": {
+        "count": 2,
+        "success": 2
+      },
+      "Aggregator": {
+        "count": 1,
+        "success": 1
+      }
+    }
+  }
+}

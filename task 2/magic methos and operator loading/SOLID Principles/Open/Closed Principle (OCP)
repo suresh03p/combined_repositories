@@ -1,0 +1,37 @@
+from abc import ABC, abstractmethod
+
+
+class Discount(ABC):
+
+    @abstractmethod
+    def get_discount(self):
+        pass
+
+
+class RegularCustomer(Discount):
+
+    def get_discount(self):
+        return 10
+
+
+class PremiumCustomer(Discount):
+
+    def get_discount(self):
+        return 20
+
+
+def show_discount(customer):
+    print(
+        f"Discount: "
+        f"{customer.get_discount()}%"
+    )
+
+
+show_discount(
+    RegularCustomer()
+)
+
+show_discount(
+    PremiumCustomer()
+)
+`

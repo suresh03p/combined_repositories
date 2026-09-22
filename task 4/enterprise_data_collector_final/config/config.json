@@ -1,0 +1,13 @@
+{
+  "api_endpoints": [
+    "https://jsonplaceholder.typicode.com/posts",
+    "https://jsonplaceholder.typicode.com/comments",
+    "https://jsonplaceholder.typicode.com/albums"
+  ],
+  "request_timeout": 5,
+  "max_retries": 3,
+  "retry_delay": 0.5,
+  "log_level": "INFO",
+  "reports_dir": "reports",
+  "data_dir": "data"
+}

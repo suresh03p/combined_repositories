@@ -1,0 +1,177 @@
+# performance_test.py
+# Story 6 - Performance Benchmark
+# Comparisons:
+# 1. List vs Generator
+# 2. Normal Function vs Decorator
+# 3. Manual File Handling vs Context Manager
+# 4. Iterator vs List Iteration
+# Measures:
+# - Execution Time
+# - Memory Usage
+
+import time
+import tracemalloc
+from functools import wraps
+
+
+# ---------------------------------------------------
+# Utility Function for Benchmarking
+# ---------------------------------------------------
+def benchmark(func):
+    tracemalloc.start()
+
+    start_time = time.perf_counter()
+    result = func()
+    end_time = time.perf_counter()
+
+    current, peak = tracemalloc.get_traced_memory()
+    tracemalloc.stop()
+
+    execution_time = end_time - start_time
+
+    return {
+        "result": result,
+        "time": execution_time,
+        "memory": peak / 1024  # Convert to KB
+    }
+
+
+# ---------------------------------------------------
+# 1. List vs Generator
+# ---------------------------------------------------
+N = 1000000
+
+
+def list_test():
+    numbers = [i for i in range(N)]
+    return sum(numbers)
+
+
+def generator_test():
+    numbers = (i for i in range(N))
+    return sum(numbers)
+
+
+# ---------------------------------------------------
+# 2. Normal Function vs Decorator
+# ---------------------------------------------------
+def normal_function():
+    total = 0
+    for i in range(100000):
+        total += i
+    return total
+
+
+def benchmark_decorator(func):
+    @wraps(func)
+    def wrapper():
+        return func()
+    return wrapper
+
+
+@benchmark_decorator
+def decorated_function():
+    total = 0
+    for i in range(100000):
+        total += i
+    return total
+
+
+# ---------------------------------------------------
+# 3. Manual File Handling vs Context Manager
+# ---------------------------------------------------
+FILE_NAME = "sample.txt"
+
+with open(FILE_NAME, "w") as file:
+    file.write("Python Performance Benchmark\n" * 10000)
+
+
+def manual_file_handling():
+    file = open(FILE_NAME, "r")
+    data = file.read()
+    file.close()
+    return len(data)
+
+
+def context_manager_handling():
+    with open(FILE_NAME, "r") as file:
+        data = file.read()
+    return len(data)
+
+
+# ---------------------------------------------------
+# 4. Iterator vs List Iteration
+# ---------------------------------------------------
+def iterator_test():
+    iterator = iter(range(N))
+    return sum(iterator)
+
+
+def list_iteration_test():
+    numbers = list(range(N))
+    total = 0
+
+    for num in numbers:
+        total += num
+
+    return total
+
+
+# ---------------------------------------------------
+# Report Generation
+# ---------------------------------------------------
+def print_result(name, result):
+    print(
+        f"{name:<30}"
+        f" Time: {result['time']:.6f} sec"
+        f" | Memory: {result['memory']:.2f} KB"
+    )
+
+
+def generate_report():
+    print("=" * 80)
+    print("PERFORMANCE BENCHMARK REPORT")
+    print("=" * 80)
+
+    print("\n1. List vs Generator")
+    list_result = benchmark(list_test)
+    generator_result = benchmark(generator_test)
+
+    print_result("List", list_result)
+    print_result("Generator", generator_result)
+
+    print("\n2. Normal Function vs Decorator")
+    normal_result = benchmark(normal_function)
+    decorator_result = benchmark(decorated_function)
+
+    print_result("Normal Function", normal_result)
+    print_result("Decorated Function", decorator_result)
+
+    print("\n3. Manual File Handling vs Context Manager")
+    manual_result = benchmark(manual_file_handling)
+    context_result = benchmark(context_manager_handling)
+
+    print_result("Manual File Handling", manual_result)
+    print_result("Context Manager", context_result)
+
+    print("\n4. Iterator vs List Iteration")
+    iterator_result = benchmark(iterator_test)
+    list_iter_result = benchmark(list_iteration_test)
+
+    print_result("Iterator", iterator_result)
+    print_result("List Iteration", list_iter_result)
+
+    print("\n" + "=" * 80)
+    print("SUMMARY")
+    print("=" * 80)
+    print("• Generators generally use less memory than lists.")
+    print("• Decorators introduce a small execution overhead.")
+    print("• Context Managers are safer and cleaner for file handling.")
+    print("• Iterators are more memory-efficient than full list iteration.")
+
+
+# ---------------------------------------------------
+# Main Program
+# ---------------------------------------------------
+if __name__ == "__main__":
+    generate_report()

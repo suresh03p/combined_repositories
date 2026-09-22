@@ -1,0 +1,1 @@
+The canonical 300-500 word policy documents are in ../../data/documents. The final-project modules intentionally reuse that corpus so the teaching examples and final project cannot drift apart. Copy the five .txt files here when packaging the project independently.

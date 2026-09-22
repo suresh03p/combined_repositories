@@ -1,0 +1,4 @@
+Python version: 3.12.10
+pip version: 26.2
+NumPy version: 2.5.1
+Verified scripts: arrays.py, indexing.py, slicing.py, math_operations.py, student_marks.py, challenge.py, numpy_intro.py

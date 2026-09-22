@@ -1,0 +1,5 @@
+timestamp,level,message,ip,url,user_id,session_id,error_code,event_type,status,token
+2026-08-03T10:00:00Z,INFO,Login success,192.168.1.10,https://example.com/login,alice,sess-100, ,login_success,200,valid
+2026-08-03T10:01:00Z,ERROR,Login failed,192.168.1.10,https://example.com/login,bob,sess-101,ERR-103,login_failed,401,invalid
+2026-08-03T10:02:00Z,ERROR,Login failed,192.168.1.10,https://example.com/login,bob,sess-102,ERR-104,login_failed,401,invalid
+2026-08-03T10:03:00Z,ERROR,Login failed,192.168.1.10,https://example.com/login,bob,sess-103,ERR-105,login_failed,401,invalid

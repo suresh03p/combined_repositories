@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.jsonl
+*.npy
+.streamlit/
+.DS_Store

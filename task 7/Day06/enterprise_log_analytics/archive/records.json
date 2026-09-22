@@ -1,0 +1,67 @@
+[
+  {
+    "timestamp": "2026-08-03T10:01:00Z",
+    "level": "ERROR",
+    "message": "Login failed",
+    "ip": "192.168.1.10",
+    "url": "https://example.com/login",
+    "user_id": "bob",
+    "session_id": "sess-101",
+    "error_code": "ERR-103",
+    "event_type": "login_failed",
+    "status": "401",
+    "token": "invalid"
+  },
+  {
+    "timestamp": "2026-08-03T10:02:00Z",
+    "level": "ERROR",
+    "message": "Login failed",
+    "ip": "192.168.1.10",
+    "url": "https://example.com/login",
+    "user_id": "bob",
+    "session_id": "sess-102",
+    "error_code": "ERR-104",
+    "event_type": "login_failed",
+    "status": "401",
+    "token": "invalid"
+  },
+  {
+    "timestamp": "2026-08-03T10:03:00Z",
+    "level": "ERROR",
+    "message": "Login failed",
+    "ip": "192.168.1.10",
+    "url": "https://example.com/login",
+    "user_id": "bob",
+    "session_id": "sess-103",
+    "error_code": "ERR-105",
+    "event_type": "login_failed",
+    "status": "401",
+    "token": "invalid"
+  },
+  {
+    "timestamp": "2026-08-03T11:00:00Z",
+    "level": "INFO",
+    "message": "User session started",
+    "ip": "10.0.0.5",
+    "url": "https://example.com/dashboard",
+    "user_id": "carol",
+    "session_id": "sess-200",
+    "error_code": "",
+    "event_type": "session_start",
+    "status": "200",
+    "token": "valid"
+  },
+  {
+    "timestamp": "2026-08-03T11:01:00Z",
+    "level": "ERROR",
+    "message": "Unauthorized access",
+    "ip": "10.0.0.5",
+    "url": "https://example.com/dashboard",
+    "user_id": "carol",
+    "session_id": "sess-201",
+    "error_code": "ERR-200",
+    "event_type": "access_denied",
+    "status": "401",
+    "token": "invalid"
+  }
+]

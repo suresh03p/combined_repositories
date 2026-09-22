@@ -1,0 +1,8 @@
+Benchmark Report
+================
+
+Compiled regex: avg 1.196243s | peak 0.40 MB
+Loop vs regex: avg 0.001063s | peak 0.03 MB
+dict vs defaultdict: avg 0.000011s | peak 0.00 MB
+list vs deque: avg 0.001714s | peak 0.06 MB
+json vs pickle: avg 0.003700s | peak 0.04 MB

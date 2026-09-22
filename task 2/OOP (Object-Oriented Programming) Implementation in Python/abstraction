@@ -1,0 +1,19 @@
+from abc import ABC, abstractmethod
+
+
+class Payment(ABC):
+
+    @abstractmethod
+    def pay(self):
+        pass
+
+
+class CreditCardPayment(Payment):
+
+    def pay(self):
+        print("Payment through Credit Card")
+
+
+payment = CreditCardPayment()
+
+payment.pay()

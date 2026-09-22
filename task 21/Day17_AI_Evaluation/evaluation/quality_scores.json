@@ -1,0 +1,295 @@
+{
+  "evaluations": [
+    {
+      "request_id": "R001",
+      "category": "Leave Policy",
+      "input_scores": {
+        "relevance": 5,
+        "faithfulness": 5,
+        "retrieval_quality": 0.9,
+        "completeness": 5,
+        "latency": 3.2
+      },
+      "normalized_scores": {
+        "relevance": 1.0,
+        "faithfulness": 1.0,
+        "retrieval_quality": 0.9,
+        "completeness": 1.0,
+        "latency": 1.0
+      },
+      "weighted_scores": {
+        "relevance": 0.3,
+        "faithfulness": 0.3,
+        "retrieval_quality": 0.18,
+        "completeness": 0.1,
+        "latency": 0.1
+      },
+      "overall_score": 98.0,
+      "grade": "A+"
+    },
+    {
+      "request_id": "R002",
+      "category": "Leave Policy",
+      "input_scores": {
+        "relevance": 4,
+        "faithfulness": 4,
+        "retrieval_quality": 0.8,
+        "completeness": 4,
+        "latency": 2.9
+      },
+      "normalized_scores": {
+        "relevance": 0.8,
+        "faithfulness": 0.8,
+        "retrieval_quality": 0.8,
+        "completeness": 0.8,
+        "latency": 1.0
+      },
+      "weighted_scores": {
+        "relevance": 0.24,
+        "faithfulness": 0.24,
+        "retrieval_quality": 0.16,
+        "completeness": 0.08,
+        "latency": 0.1
+      },
+      "overall_score": 82.0,
+      "grade": "A"
+    },
+    {
+      "request_id": "R003",
+      "category": "Work Policies",
+      "input_scores": {
+        "relevance": 5,
+        "faithfulness": 5,
+        "retrieval_quality": 0.95,
+        "completeness": 5,
+        "latency": 3.4
+      },
+      "normalized_scores": {
+        "relevance": 1.0,
+        "faithfulness": 1.0,
+        "retrieval_quality": 0.95,
+        "completeness": 1.0,
+        "latency": 1.0
+      },
+      "weighted_scores": {
+        "relevance": 0.3,
+        "faithfulness": 0.3,
+        "retrieval_quality": 0.19,
+        "completeness": 0.1,
+        "latency": 0.1
+      },
+      "overall_score": 99.0,
+      "grade": "A+"
+    },
+    {
+      "request_id": "R004",
+      "category": "Benefits",
+      "input_scores": {
+        "relevance": 3,
+        "faithfulness": 3,
+        "retrieval_quality": 0.6,
+        "completeness": 3,
+        "latency": 4.1
+      },
+      "normalized_scores": {
+        "relevance": 0.6,
+        "faithfulness": 0.6,
+        "retrieval_quality": 0.6,
+        "completeness": 0.6,
+        "latency": 1.0
+      },
+      "weighted_scores": {
+        "relevance": 0.18,
+        "faithfulness": 0.18,
+        "retrieval_quality": 0.12,
+        "completeness": 0.06,
+        "latency": 0.1
+      },
+      "overall_score": 64.0,
+      "grade": "C"
+    },
+    {
+      "request_id": "R005",
+      "category": "Leave Policy",
+      "input_scores": {
+        "relevance": 4,
+        "faithfulness": 5,
+        "retrieval_quality": 0.85,
+        "completeness": 4,
+        "latency": 3.0
+      },
+      "normalized_scores": {
+        "relevance": 0.8,
+        "faithfulness": 1.0,
+        "retrieval_quality": 0.85,
+        "completeness": 0.8,
+        "latency": 1.0
+      },
+      "weighted_scores": {
+        "relevance": 0.24,
+        "faithfulness": 0.3,
+        "retrieval_quality": 0.17,
+        "completeness": 0.08,
+        "latency": 0.1
+      },
+      "overall_score": 89.0,
+      "grade": "A"
+    },
+    {
+      "request_id": "R006",
+      "category": "Office Policies",
+      "input_scores": {
+        "relevance": 2,
+        "faithfulness": 2,
+        "retrieval_quality": 0.4,
+        "completeness": 2,
+        "latency": 5.2
+      },
+      "normalized_scores": {
+        "relevance": 0.4,
+        "faithfulness": 0.4,
+        "retrieval_quality": 0.4,
+        "completeness": 0.4,
+        "latency": 0.99
+      },
+      "weighted_scores": {
+        "relevance": 0.12,
+        "faithfulness": 0.12,
+        "retrieval_quality": 0.08,
+        "completeness": 0.04,
+        "latency": 0.099
+      },
+      "overall_score": 45.9,
+      "grade": "F"
+    },
+    {
+      "request_id": "R007",
+      "category": "Leave Policy",
+      "input_scores": {
+        "relevance": 5,
+        "faithfulness": 4,
+        "retrieval_quality": 0.9,
+        "completeness": 4,
+        "latency": 3.3
+      },
+      "normalized_scores": {
+        "relevance": 1.0,
+        "faithfulness": 0.8,
+        "retrieval_quality": 0.9,
+        "completeness": 0.8,
+        "latency": 1.0
+      },
+      "weighted_scores": {
+        "relevance": 0.3,
+        "faithfulness": 0.24,
+        "retrieval_quality": 0.18,
+        "completeness": 0.08,
+        "latency": 0.1
+      },
+      "overall_score": 90.0,
+      "grade": "A+"
+    },
+    {
+      "request_id": "R008",
+      "category": "HR Procedures",
+      "input_scores": {
+        "relevance": 3,
+        "faithfulness": 3,
+        "retrieval_quality": 0.5,
+        "completeness": 3,
+        "latency": 6.0
+      },
+      "normalized_scores": {
+        "relevance": 0.6,
+        "faithfulness": 0.6,
+        "retrieval_quality": 0.5,
+        "completeness": 0.6,
+        "latency": 0.95
+      },
+      "weighted_scores": {
+        "relevance": 0.18,
+        "faithfulness": 0.18,
+        "retrieval_quality": 0.1,
+        "completeness": 0.06,
+        "latency": 0.095
+      },
+      "overall_score": 61.5,
+      "grade": "C"
+    },
+    {
+      "request_id": "R009",
+      "category": "Compensation",
+      "input_scores": {
+        "relevance": 4,
+        "faithfulness": 4,
+        "retrieval_quality": 0.75,
+        "completeness": 4,
+        "latency": 2.8
+      },
+      "normalized_scores": {
+        "relevance": 0.8,
+        "faithfulness": 0.8,
+        "retrieval_quality": 0.75,
+        "completeness": 0.8,
+        "latency": 1.0
+      },
+      "weighted_scores": {
+        "relevance": 0.24,
+        "faithfulness": 0.24,
+        "retrieval_quality": 0.15,
+        "completeness": 0.08,
+        "latency": 0.1
+      },
+      "overall_score": 81.0,
+      "grade": "A"
+    },
+    {
+      "request_id": "R010",
+      "category": "Office Policies",
+      "input_scores": {
+        "relevance": 5,
+        "faithfulness": 5,
+        "retrieval_quality": 0.95,
+        "completeness": 5,
+        "latency": 2.5
+      },
+      "normalized_scores": {
+        "relevance": 1.0,
+        "faithfulness": 1.0,
+        "retrieval_quality": 0.95,
+        "completeness": 1.0,
+        "latency": 1.0
+      },
+      "weighted_scores": {
+        "relevance": 0.3,
+        "faithfulness": 0.3,
+        "retrieval_quality": 0.19,
+        "completeness": 0.1,
+        "latency": 0.1
+      },
+      "overall_score": 99.0,
+      "grade": "A+"
+    }
+  ],
+  "weights": {
+    "relevance": 0.3,
+    "faithfulness": 0.3,
+    "retrieval_quality": 0.2,
+    "completeness": 0.1,
+    "latency": 0.1
+  },
+  "summary": {
+    "total": 10,
+    "average_score": 80.94,
+    "min_score": 45.9,
+    "max_score": 99.0,
+    "grade_distribution": {
+      "A+": 4,
+      "A": 3,
+      "B": 0,
+      "C": 2,
+      "D": 0,
+      "F": 1
+    }
+  }
+}

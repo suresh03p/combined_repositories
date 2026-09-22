@@ -1,0 +1,4 @@
+numbers = infinite_number_generator()
+
+for _ in range(5):
+    print(next(numbers))

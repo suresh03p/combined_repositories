@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: production-ai-api
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: development
+      APP_PORT: 8000

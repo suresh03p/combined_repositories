@@ -1,0 +1,36 @@
+from abc import ABC, abstractmethod
+
+
+class Database(ABC):
+
+    @abstractmethod
+    def save(self):
+        pass
+
+
+class MySQLDatabase(Database):
+
+    def save(self):
+        print("Saved to MySQL")
+
+
+class PostgreSQLDatabase(Database):
+
+    def save(self):
+        print("Saved to PostgreSQL")
+
+
+class UserService:
+
+    def __init__(self, database):
+        self.database = database
+
+    def save_user(self):
+        self.database.save()
+
+
+mysql = MySQLDatabase()
+
+service = UserService(mysql)
+
+service.save_user()

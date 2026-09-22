@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Attach to FastAPI",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5678
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/Day32_Multimodal_AI",
+          "remoteRoot": "${workspaceFolder}/Day32_Multimodal_AI"
+        }
+      ]
+    },
+    {
+      "name": "Python: Run app.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/Day32_Multimodal_AI/app.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

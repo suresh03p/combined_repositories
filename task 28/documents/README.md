@@ -1,0 +1,1 @@
+The runnable demo uses five `.txt` policy fixtures so it works immediately without binary assets. Replace or supplement them with real `.pdf` files; `rag/ingestion.py` extracts PDF text, page number, and document name with pypdf.

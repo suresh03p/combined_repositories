@@ -1,0 +1,16 @@
+# Parent Class
+
+class Employee:
+
+    def work(self):
+        print("Employee is Working")
+
+
+# Child Class
+
+class Developer(Employee):
+    pass
+
+
+dev = Developer()
+dev.work()

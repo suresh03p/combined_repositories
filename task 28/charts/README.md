@@ -1,0 +1,1 @@
+Generate `chunk_comparison.png`, `retrieval_comparison.png`, and `reranking_comparison.png` from measured experiment results. Binary chart files are intentionally not committed in the starter scaffold.

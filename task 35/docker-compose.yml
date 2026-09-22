@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  inference-api:
+    build: .
+    depends_on:
+      - redis
+    ports:
+      - "8000:8000"
+    environment:
+      MODEL_VERSION: customer-support-v1.0
+      REDIS_URL: redis://redis:6379/0
+    command: uvicorn app.api.inference:app --host 0.0.0.0 --port 8000
+
+  worker:
+    build: .
+    depends_on:
+      - redis
+    environment:
+      REDIS_URL: redis://redis:6379/0
+    command: python -c "print('Inference worker started')"

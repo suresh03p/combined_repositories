@@ -1,0 +1,11 @@
+{
+  "model": "google/flan-t5-small + LoRA adapter",
+  "phase": "fine_tuned",
+  "accuracy": 0.88,
+  "correctness": 0.9,
+  "relevance": 0.92,
+  "invalid_predictions": 0.03,
+  "avg_latency_seconds": 1.7,
+  "avg_token_usage": 20,
+  "notes": "LoRA fine-tuning improves domain alignment and reduces invalid or ambiguous outputs for the selected intent task."
+}

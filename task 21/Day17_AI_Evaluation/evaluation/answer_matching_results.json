@@ -1,0 +1,90 @@
+{
+  "results": [
+    {
+      "question_id": "Q001",
+      "question": "What is the annual leave allowance?",
+      "expected": "Employees receive 18 annual leave days.",
+      "actual": "Employees receive 18 annual leave days.",
+      "exact_match": true,
+      "keyword_match": true,
+      "semantic_similarity": 1.0,
+      "semantic_match": true
+    },
+    {
+      "question_id": "Q002",
+      "question": "What is the annual leave allowance?",
+      "expected": "Employees receive 18 annual leave days.",
+      "actual": "The company provides 18 days of annual leave.",
+      "exact_match": false,
+      "keyword_match": false,
+      "semantic_similarity": 0.548,
+      "semantic_match": false
+    },
+    {
+      "question_id": "Q003",
+      "question": "What is the leave policy?",
+      "expected": "Annual leave is 18 days. You can carry over 5 days.",
+      "actual": "Employees get 18 annual leave days.",
+      "exact_match": false,
+      "keyword_match": false,
+      "semantic_similarity": 0.419,
+      "semantic_match": false
+    },
+    {
+      "question_id": "Q004",
+      "question": "What leave types exist?",
+      "expected": "Leave includes vacation sick leave and personal days.",
+      "actual": "Personal days sick leave and vacation are all covered.",
+      "exact_match": false,
+      "keyword_match": false,
+      "semantic_similarity": 0.449,
+      "semantic_match": false
+    },
+    {
+      "question_id": "Q005",
+      "question": "How do I request leave?",
+      "expected": "Contact HR to apply for leave.",
+      "actual": "Reach out to the Human Resources department to submit your leave request.",
+      "exact_match": false,
+      "keyword_match": false,
+      "semantic_similarity": 0.369,
+      "semantic_match": false
+    },
+    {
+      "question_id": "Q006",
+      "question": "What is the annual leave allowance?",
+      "expected": "Employees receive 18 annual leave days.",
+      "actual": "The office has 200 employees.",
+      "exact_match": false,
+      "keyword_match": false,
+      "semantic_similarity": 0.294,
+      "semantic_match": false
+    },
+    {
+      "question_id": "Q007",
+      "question": "What is the work from home policy?",
+      "expected": "Employees can work from home 2 days per week.",
+      "actual": "Employees can work from home every day without restrictions.",
+      "exact_match": false,
+      "keyword_match": false,
+      "semantic_similarity": 0.705,
+      "semantic_match": true
+    },
+    {
+      "question_id": "Q008",
+      "question": "What is the annual leave?",
+      "expected": "Employees get 18 days.",
+      "actual": "Employees get 18 days of annual leave and can carry over up to 5 days to the next year.",
+      "exact_match": false,
+      "keyword_match": false,
+      "semantic_similarity": 0.404,
+      "semantic_match": false
+    }
+  ],
+  "summary": {
+    "total_cases": 8,
+    "exact_match_accuracy": 0.125,
+    "keyword_match_accuracy": 0.125,
+    "semantic_match_accuracy": 0.25
+  }
+}

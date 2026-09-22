@@ -1,0 +1,202 @@
+{
+  "judgments": [
+    {
+      "question_id": "Q001",
+      "question": "What is the annual leave allowance?",
+      "ai_answer": "Employees receive 18 annual leave days per year.",
+      "reference_answer": "18 annual leave days",
+      "context": "Employees are entitled to 18 annual leave days annually.",
+      "category": "Leave Policy",
+      "relevance_score": 4,
+      "faithfulness_score": 5,
+      "completeness_score": 5,
+      "clarity_score": 4,
+      "overall_score": 4.5,
+      "evaluation_notes": {
+        "relevance_reason": "Question terms found in answer: 66%",
+        "faithfulness_reason": "Answer supported by context: 80%",
+        "completeness_reason": "Answer length vs reference: 100%",
+        "clarity_reason": "Avg sentence length: 8.0 words"
+      }
+    },
+    {
+      "question_id": "Q002",
+      "question": "How do employees apply for leave?",
+      "ai_answer": "Submit request through HR portal at least 2 weeks in advance.",
+      "reference_answer": "Apply through HR portal with 2 weeks notice",
+      "context": "Leave requests must be submitted through HR portal minimum 2 weeks before the leave date.",
+      "category": "Leave Policy",
+      "relevance_score": 1,
+      "faithfulness_score": 3,
+      "completeness_score": 5,
+      "clarity_score": 5,
+      "overall_score": 3.5,
+      "evaluation_notes": {
+        "relevance_reason": "Question terms found in answer: 0%",
+        "faithfulness_reason": "Answer supported by context: 50%",
+        "completeness_reason": "Answer length vs reference: 100%",
+        "clarity_reason": "Avg sentence length: 11.0 words"
+      }
+    },
+    {
+      "question_id": "Q003",
+      "question": "What is the work-from-home policy?",
+      "ai_answer": "Can work from home 2 days per week.",
+      "reference_answer": "2 days per week from home",
+      "context": "Employees are permitted to work from home up to 2 days per week.",
+      "category": "Work Policies",
+      "relevance_score": 1,
+      "faithfulness_score": 5,
+      "completeness_score": 5,
+      "clarity_score": 4,
+      "overall_score": 3.75,
+      "evaluation_notes": {
+        "relevance_reason": "Question terms found in answer: 0%",
+        "faithfulness_reason": "Answer supported by context: 100%",
+        "completeness_reason": "Answer length vs reference: 100%",
+        "clarity_reason": "Avg sentence length: 8.0 words"
+      }
+    },
+    {
+      "question_id": "Q004",
+      "question": "What are the benefits?",
+      "ai_answer": "The company offers gym membership, health insurance, and dental coverage.",
+      "reference_answer": "Gym membership and health benefits",
+      "context": "Benefits include gym membership and annual health check-ups.",
+      "category": "Benefits",
+      "relevance_score": 1,
+      "faithfulness_score": 2,
+      "completeness_score": 5,
+      "clarity_score": 5,
+      "overall_score": 3.25,
+      "evaluation_notes": {
+        "relevance_reason": "Question terms found in answer: 0%",
+        "faithfulness_reason": "Answer supported by context: 25%",
+        "completeness_reason": "Answer length vs reference: 100%",
+        "clarity_reason": "Avg sentence length: 10.0 words"
+      }
+    },
+    {
+      "question_id": "Q005",
+      "question": "What is the maternity leave policy?",
+      "ai_answer": "Maternity leave is 120 days.",
+      "reference_answer": "120 days maternity leave for female employees",
+      "context": "Female employees are entitled to 120 days of maternity leave.",
+      "category": "Leave Policy",
+      "relevance_score": 4,
+      "faithfulness_score": 3,
+      "completeness_score": 4,
+      "clarity_score": 3,
+      "overall_score": 3.5,
+      "evaluation_notes": {
+        "relevance_reason": "Question terms found in answer: 66%",
+        "faithfulness_reason": "Answer supported by context: 50%",
+        "completeness_reason": "Answer length vs reference: 71%",
+        "clarity_reason": "Avg sentence length: 5.0 words"
+      }
+    },
+    {
+      "question_id": "Q006",
+      "question": "What are the office hours?",
+      "ai_answer": "Office hours",
+      "reference_answer": "9 AM to 5 PM Monday to Friday",
+      "context": "Office operating hours are 9 AM to 5 PM, Monday through Friday.",
+      "category": "Office Policies",
+      "relevance_score": 3,
+      "faithfulness_score": 5,
+      "completeness_score": 2,
+      "clarity_score": 1,
+      "overall_score": 2.75,
+      "evaluation_notes": {
+        "relevance_reason": "Question terms found in answer: 50%",
+        "faithfulness_reason": "Answer supported by context: 100%",
+        "completeness_reason": "Answer length vs reference: 25%",
+        "clarity_reason": "Avg sentence length: 2.0 words"
+      }
+    },
+    {
+      "question_id": "Q007",
+      "question": "What is the sick leave policy?",
+      "ai_answer": "10 days per year with doctor's note for absences over 3 days.",
+      "reference_answer": "10 sick leave days, medical cert required for 3+ days",
+      "context": "Employees receive 10 sick leave days yearly. Medical certificate required for absences exceeding 3 consecutive days.",
+      "category": "Leave Policy",
+      "relevance_score": 1,
+      "faithfulness_score": 2,
+      "completeness_score": 5,
+      "clarity_score": 5,
+      "overall_score": 3.25,
+      "evaluation_notes": {
+        "relevance_reason": "Question terms found in answer: 0%",
+        "faithfulness_reason": "Answer supported by context: 33%",
+        "completeness_reason": "Answer length vs reference: 100%",
+        "clarity_reason": "Avg sentence length: 12.0 words"
+      }
+    },
+    {
+      "question_id": "Q008",
+      "question": "How is performance evaluated?",
+      "ai_answer": "Annual appraisal done in December.",
+      "reference_answer": "Performance review conducted annually in December",
+      "context": "Annual performance appraisals are conducted in December.",
+      "category": "HR Procedures",
+      "relevance_score": 1,
+      "faithfulness_score": 2,
+      "completeness_score": 5,
+      "clarity_score": 3,
+      "overall_score": 2.75,
+      "evaluation_notes": {
+        "relevance_reason": "Question terms found in answer: 0%",
+        "faithfulness_reason": "Answer supported by context: 33%",
+        "completeness_reason": "Answer length vs reference: 83%",
+        "clarity_reason": "Avg sentence length: 5.0 words"
+      }
+    },
+    {
+      "question_id": "Q009",
+      "question": "What about overtime compensation?",
+      "ai_answer": "Overtime paid at regular rate.",
+      "reference_answer": "Overtime at 1.5 times regular rate",
+      "context": "Overtime is compensated at 1.5 times the employee's regular hourly rate.",
+      "category": "Compensation",
+      "relevance_score": 2,
+      "faithfulness_score": 4,
+      "completeness_score": 5,
+      "clarity_score": 3,
+      "overall_score": 3.5,
+      "evaluation_notes": {
+        "relevance_reason": "Question terms found in answer: 33%",
+        "faithfulness_reason": "Answer supported by context: 66%",
+        "completeness_reason": "Answer length vs reference: 83%",
+        "clarity_reason": "Avg sentence length: 5.0 words"
+      }
+    },
+    {
+      "question_id": "Q010",
+      "question": "What dress code applies?",
+      "ai_answer": "Smart casual dress code in office.",
+      "reference_answer": "Smart casual attire required",
+      "context": "Smart casual dress code applies in the office.",
+      "category": "Office Policies",
+      "relevance_score": 4,
+      "faithfulness_score": 5,
+      "completeness_score": 5,
+      "clarity_score": 3,
+      "overall_score": 4.25,
+      "evaluation_notes": {
+        "relevance_reason": "Question terms found in answer: 66%",
+        "faithfulness_reason": "Answer supported by context: 100%",
+        "completeness_reason": "Answer length vs reference: 100%",
+        "clarity_reason": "Avg sentence length: 6.0 words"
+      }
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "average_relevance": 2.2,
+    "average_faithfulness": 3.6,
+    "average_completeness": 4.6,
+    "average_clarity": 3.6,
+    "average_overall": 3.5
+  }
+}
