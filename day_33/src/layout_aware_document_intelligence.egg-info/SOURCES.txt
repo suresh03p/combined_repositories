@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/ingestion/__init__.py
+src/ingestion/document_loader.py
+src/layout_aware_document_intelligence.egg-info/PKG-INFO
+src/layout_aware_document_intelligence.egg-info/SOURCES.txt
+src/layout_aware_document_intelligence.egg-info/dependency_links.txt
+src/layout_aware_document_intelligence.egg-info/requires.txt
+src/layout_aware_document_intelligence.egg-info/top_level.txt
+src/parsing/__init__.py
+src/parsing/page_parser.py
+tests/test_document_pipeline.py

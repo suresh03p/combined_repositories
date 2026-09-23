@@ -1,0 +1,43 @@
+{
+  "document_id": "DOC-0A64F94D3446",
+  "page_number": 1,
+  "text": "Product Catalog\nProduct information\nCatalog section 1",
+  "images": [
+    {
+      "width": 500,
+      "height": 180
+    }
+  ],
+  "tables": [],
+  "section": "Product Catalog",
+  "heading": "Product Catalog",
+  "paragraphs": [
+    {
+      "text": "Product Catalog",
+      "position": [
+        54.0,
+        32.73999786376953,
+        193.0139923095703,
+        57.5260009765625
+      ]
+    },
+    {
+      "text": "Product information",
+      "position": [
+        54.0,
+        75.17500305175781,
+        149.36997985839844,
+        90.28900146484375
+      ]
+    },
+    {
+      "text": "Catalog section 1",
+      "position": [
+        54.0,
+        93.17500305175781,
+        138.98597717285156,
+        108.28900146484375
+      ]
+    }
+  ]
+}

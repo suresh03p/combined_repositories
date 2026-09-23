@@ -1,0 +1,43 @@
+{
+  "document_id": "DOC-31D377A03BD9",
+  "page_number": 1,
+  "text": "Product Specification\nProduct overview\nTechnical specifications",
+  "images": [
+    {
+      "width": 500,
+      "height": 180
+    }
+  ],
+  "tables": [],
+  "section": "Product Specification",
+  "heading": "Product Specification",
+  "paragraphs": [
+    {
+      "text": "Product Specification",
+      "position": [
+        54.0,
+        32.73999786376953,
+        239.0399932861328,
+        57.5260009765625
+      ]
+    },
+    {
+      "text": "Product overview",
+      "position": [
+        54.0,
+        75.17500305175781,
+        138.35899353027344,
+        90.28900146484375
+      ]
+    },
+    {
+      "text": "Technical specifications",
+      "position": [
+        54.0,
+        93.17500305175781,
+        170.1489715576172,
+        108.28900146484375
+      ]
+    }
+  ]
+}

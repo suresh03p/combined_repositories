@@ -1,0 +1,88 @@
+{
+  "document_id": "DOC-AC70AF4D3B1A",
+  "page_number": 1,
+  "text": "Financial Report\nFinancial summary\nRevenue and operating expenses\nItem\nQuantity\nAmount\nWidget A\n12\n$1,200\nWidget B\n4\n$800",
+  "images": [
+    {
+      "width": 500,
+      "height": 180
+    }
+  ],
+  "tables": [
+    [
+      [
+        "Item",
+        "Quantity",
+        "Amount"
+      ],
+      [
+        "Widget A",
+        "12",
+        "$1,200"
+      ],
+      [
+        "Widget B",
+        "4",
+        "$800"
+      ]
+    ]
+  ],
+  "section": "Financial Report",
+  "heading": "Financial Report",
+  "paragraphs": [
+    {
+      "text": "Financial Report",
+      "position": [
+        54.0,
+        32.73999786376953,
+        195.03001403808594,
+        57.5260009765625
+      ]
+    },
+    {
+      "text": "Financial summary",
+      "position": [
+        54.0,
+        75.17500305175781,
+        146.28997802734375,
+        90.28900146484375
+      ]
+    },
+    {
+      "text": "Revenue and operating expenses",
+      "position": [
+        54.0,
+        93.17500305175781,
+        218.48294067382812,
+        108.28900146484375
+      ]
+    },
+    {
+      "text": "Item\nQuantity\nAmount",
+      "position": [
+        60.0,
+        123.17500305175781,
+        397.906005859375,
+        138.28900146484375
+      ]
+    },
+    {
+      "text": "Widget A\n12\n$1,200",
+      "position": [
+        60.0,
+        145.1750030517578,
+        393.63800048828125,
+        160.28900146484375
+      ]
+    },
+    {
+      "text": "Widget B\n4\n$800",
+      "position": [
+        60.0,
+        167.1750030517578,
+        384.4639892578125,
+        182.28900146484375
+      ]
+    }
+  ]
+}

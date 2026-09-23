@@ -1,0 +1,83 @@
+{
+  "document_id": "DOC-EFC9A9340C5A",
+  "page_number": 1,
+  "text": "Quarterly Summary\nFinancial summary\nPrepared for internal testing\nItem\nQuantity\nAmount\nWidget A\n12\n$1,200\nWidget B\n4\n$800",
+  "images": [],
+  "tables": [
+    [
+      [
+        "Item",
+        "Quantity",
+        "Amount"
+      ],
+      [
+        "Widget A",
+        "12",
+        "$1,200"
+      ],
+      [
+        "Widget B",
+        "4",
+        "$800"
+      ]
+    ]
+  ],
+  "section": "Quarterly Summary",
+  "heading": "Quarterly Summary",
+  "paragraphs": [
+    {
+      "text": "Quarterly Summary",
+      "position": [
+        54.0,
+        32.73999786376953,
+        221.0579833984375,
+        57.5260009765625
+      ]
+    },
+    {
+      "text": "Financial summary",
+      "position": [
+        54.0,
+        75.17500305175781,
+        146.28997802734375,
+        90.28900146484375
+      ]
+    },
+    {
+      "text": "Prepared for internal testing",
+      "position": [
+        54.0,
+        93.17500305175781,
+        189.7289581298828,
+        108.28900146484375
+      ]
+    },
+    {
+      "text": "Item\nQuantity\nAmount",
+      "position": [
+        60.0,
+        123.17500305175781,
+        397.906005859375,
+        138.28900146484375
+      ]
+    },
+    {
+      "text": "Widget A\n12\n$1,200",
+      "position": [
+        60.0,
+        145.1750030517578,
+        393.63800048828125,
+        160.28900146484375
+      ]
+    },
+    {
+      "text": "Widget B\n4\n$800",
+      "position": [
+        60.0,
+        167.1750030517578,
+        384.4639892578125,
+        182.28900146484375
+      ]
+    }
+  ]
+}

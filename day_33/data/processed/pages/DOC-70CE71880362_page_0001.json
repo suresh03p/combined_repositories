@@ -1,0 +1,83 @@
+{
+  "document_id": "DOC-70CE71880362",
+  "page_number": 1,
+  "text": "Invoice 001\nBill to: Synthetic Customer\nTerms: Net 30\nItem\nQuantity\nAmount\nWidget A\n12\n$1,200\nWidget B\n4\n$800",
+  "images": [],
+  "tables": [
+    [
+      [
+        "Item",
+        "Quantity",
+        "Amount"
+      ],
+      [
+        "Widget A",
+        "12",
+        "$1,200"
+      ],
+      [
+        "Widget B",
+        "4",
+        "$800"
+      ]
+    ]
+  ],
+  "section": "Invoice 001",
+  "heading": "Invoice 001",
+  "paragraphs": [
+    {
+      "text": "Invoice 001",
+      "position": [
+        54.0,
+        32.73999786376953,
+        151.05599975585938,
+        57.5260009765625
+      ]
+    },
+    {
+      "text": "Bill to: Synthetic Customer",
+      "position": [
+        54.0,
+        75.17500305175781,
+        182.9859619140625,
+        90.28900146484375
+      ]
+    },
+    {
+      "text": "Terms: Net 30",
+      "position": [
+        54.0,
+        93.17500305175781,
+        123.68498992919922,
+        108.28900146484375
+      ]
+    },
+    {
+      "text": "Item\nQuantity\nAmount",
+      "position": [
+        60.0,
+        123.17500305175781,
+        397.906005859375,
+        138.28900146484375
+      ]
+    },
+    {
+      "text": "Widget A\n12\n$1,200",
+      "position": [
+        60.0,
+        145.1750030517578,
+        393.63800048828125,
+        160.28900146484375
+      ]
+    },
+    {
+      "text": "Widget B\n4\n$800",
+      "position": [
+        60.0,
+        167.1750030517578,
+        384.4639892578125,
+        182.28900146484375
+      ]
+    }
+  ]
+}
