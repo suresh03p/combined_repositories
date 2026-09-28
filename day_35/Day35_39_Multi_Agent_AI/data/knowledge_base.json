@@ -1,0 +1,26 @@
+[
+  {
+    "id": "kb-001",
+    "source": "Knowledge Base: Roles",
+    "title": "Agent specialization and task ownership",
+    "content": "Specialization gives each agent a bounded responsibility and a clear result contract. The supervisor owns delegation and workflow progress; a research agent finds candidate sources; a RAG agent retrieves relevant local passages."
+  },
+  {
+    "id": "kb-002",
+    "source": "Knowledge Base: State",
+    "title": "Shared state and agent communication",
+    "content": "Shared state is the typed handoff between agents. Agents return results rather than silently changing workflow ownership. The supervisor records each result before selecting the next step."
+  },
+  {
+    "id": "kb-003",
+    "source": "Knowledge Base: Quality",
+    "title": "Analysis, validation, and result aggregation",
+    "content": "An analysis agent combines evidence and identifies themes. A validation agent checks that claims have sources and flags missing evidence. A writer aggregates the validated results into a concise final answer."
+  },
+  {
+    "id": "kb-004",
+    "source": "Knowledge Base: Tradeoffs",
+    "title": "Multi-agent workflow limitations",
+    "content": "Multi-agent systems add coordination overhead, latency, and more opportunities for failure. Shared state, bounded tasks, clear ownership, and validation improve observability but do not guarantee factual correctness."
+  }
+]
