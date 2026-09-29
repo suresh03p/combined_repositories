@@ -1,0 +1,1 @@
+"""Controlled shared state for cooperating agents."""
