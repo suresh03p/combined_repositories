@@ -1,0 +1,208 @@
+{
+  "traces": [
+    {
+      "agent": "research_1_revenue",
+      "start_time": "2026-09-30T10:12:14.587181+00:00",
+      "end_time": "2026-09-30T10:12:14.665483+00:00",
+      "status": "succeeded",
+      "tool_calls": [
+        "research_1_revenue.run attempt 1",
+        "demo.lookup(revenue_inr_crore)"
+      ],
+      "result": {
+        "agent_name": "research_1_revenue",
+        "category": "research",
+        "claims": {
+          "revenue_inr_crore": 20
+        },
+        "sources": [
+          "Synthetic demo fixture"
+        ],
+        "evidence": [
+          "Research task 1: inspect the illustrative revenue figure."
+        ],
+        "citations": [
+          "DEMO:research_1_revenue"
+        ],
+        "calculations": {},
+        "tool_calls": [
+          "demo.lookup(revenue_inr_crore)"
+        ],
+        "status": "succeeded",
+        "error": null
+      },
+      "error": null
+    },
+    {
+      "agent": "research_3_sources",
+      "start_time": "2026-09-30T10:12:14.587181+00:00",
+      "end_time": "2026-09-30T10:12:14.665483+00:00",
+      "status": "succeeded",
+      "tool_calls": [
+        "research_3_sources.run attempt 1",
+        "demo.lookup(source_count)"
+      ],
+      "result": {
+        "agent_name": "research_3_sources",
+        "category": "research",
+        "claims": {
+          "source_count": 3
+        },
+        "sources": [
+          "Synthetic demo fixture"
+        ],
+        "evidence": [
+          "Research task 3: count the synthetic supporting source records."
+        ],
+        "citations": [
+          "DEMO:research_3_sources"
+        ],
+        "calculations": {},
+        "tool_calls": [
+          "demo.lookup(source_count)"
+        ],
+        "status": "succeeded",
+        "error": null
+      },
+      "error": null
+    },
+    {
+      "agent": "analytics_agent",
+      "start_time": "2026-09-30T10:12:14.587181+00:00",
+      "end_time": "2026-09-30T10:12:14.665483+00:00",
+      "status": "succeeded",
+      "tool_calls": [
+        "analytics_agent.run attempt 1",
+        "demo.lookup(revenue_growth_percent)"
+      ],
+      "result": {
+        "agent_name": "analytics_agent",
+        "category": "analytics",
+        "claims": {
+          "revenue_growth_percent": 10.0
+        },
+        "sources": [
+          "Synthetic demo fixture"
+        ],
+        "evidence": [
+          "Calculate illustrative growth from 100 to 110."
+        ],
+        "citations": [
+          "DEMO:analytics_agent"
+        ],
+        "calculations": {
+          "revenue_growth_percent": {
+            "expected": 10.0,
+            "actual": 10.0,
+            "tolerance": 1e-06
+          }
+        },
+        "tool_calls": [
+          "demo.lookup(revenue_growth_percent)"
+        ],
+        "status": "succeeded",
+        "error": null
+      },
+      "error": null
+    },
+    {
+      "agent": "research_2_market",
+      "start_time": "2026-09-30T10:12:14.587181+00:00",
+      "end_time": "2026-09-30T10:12:14.665483+00:00",
+      "status": "succeeded",
+      "tool_calls": [
+        "research_2_market.run attempt 1",
+        "demo.lookup(market_growth_percent)"
+      ],
+      "result": {
+        "agent_name": "research_2_market",
+        "category": "research",
+        "claims": {
+          "market_growth_percent": 8.2
+        },
+        "sources": [
+          "Synthetic demo fixture"
+        ],
+        "evidence": [
+          "Research task 2: inspect the illustrative market growth figure."
+        ],
+        "citations": [
+          "DEMO:research_2_market"
+        ],
+        "calculations": {},
+        "tool_calls": [
+          "demo.lookup(market_growth_percent)"
+        ],
+        "status": "succeeded",
+        "error": null
+      },
+      "error": null
+    },
+    {
+      "agent": "document_agent",
+      "start_time": "2026-09-30T10:12:14.587181+00:00",
+      "end_time": "2026-09-30T10:12:14.665483+00:00",
+      "status": "succeeded",
+      "tool_calls": [
+        "document_agent.run attempt 1",
+        "demo.lookup(reporting_period)"
+      ],
+      "result": {
+        "agent_name": "document_agent",
+        "category": "document",
+        "claims": {
+          "reporting_period": "FY2025"
+        },
+        "sources": [
+          "Synthetic demo fixture"
+        ],
+        "evidence": [
+          "Extract the reporting period from the synthetic document."
+        ],
+        "citations": [
+          "DEMO:document_agent"
+        ],
+        "calculations": {},
+        "tool_calls": [
+          "demo.lookup(reporting_period)"
+        ],
+        "status": "succeeded",
+        "error": null
+      },
+      "error": null
+    },
+    {
+      "agent": "rag_agent",
+      "start_time": "2026-09-30T10:12:14.587181+00:00",
+      "end_time": "2026-09-30T10:12:14.665483+00:00",
+      "status": "succeeded",
+      "tool_calls": [
+        "rag_agent.run attempt 1",
+        "demo.lookup(revenue_inr_crore)"
+      ],
+      "result": {
+        "agent_name": "rag_agent",
+        "category": "rag",
+        "claims": {
+          "revenue_inr_crore": 25
+        },
+        "sources": [
+          "Synthetic demo fixture"
+        ],
+        "evidence": [
+          "Retrieve the illustrative revenue figure from the demo knowledge base."
+        ],
+        "citations": [
+          "DEMO:rag_agent"
+        ],
+        "calculations": {},
+        "tool_calls": [
+          "demo.lookup(revenue_inr_crore)"
+        ],
+        "status": "succeeded",
+        "error": null
+      },
+      "error": null
+    }
+  ]
+}

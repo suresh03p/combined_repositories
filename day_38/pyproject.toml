@@ -1,0 +1,9 @@
+[project]
+name = "parallel-multi-agent-research-engine"
+version = "0.1.0"
+description = "A standard-library async orchestration demo with validation and conflict detection."
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.unittest]
+test-discovery = "tests"
