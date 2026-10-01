@@ -1,0 +1,2658 @@
+[
+  {
+    "timestamp": "2026-10-01T05:06:43.985633+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "b9f389c9-5789-4a83-9e96-351084278663"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:06:43.993020+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:06:44.000792+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "d3617902-9838-4fbf-86b5-e7f16d64f161"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:06:44.006172+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:06:44.016239+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "c5c9e1b6-ea4a-417d-8b25-38cfb19ed240"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:06:44.021214+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T05:06:44.031880+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "48d0eaa9-f98a-4381-b0b4-8c4ff8a327b0"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:06:44.035411+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:00.235752+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "b2856580-c236-4bd2-bab6-fe3ec526ddc9"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:00.285036+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:00.313711+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "257a1763-e79f-4860-adbe-f530f93b7080"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:00.335984+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:00.363244+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "c7ddf878-a619-49b7-8c89-39efedcbaf26"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:00.370350+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:00.397363+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "44673832-a39a-4b96-902a-c59fd05457f8"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:00.404479+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:31.506740+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "80abc830-91fa-41ef-a513-67b56b68a7a7"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:31.506740+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:31.523192+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "beba4174-a577-4983-bed1-c744e1bc9b95"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:31.523192+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:31.539879+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "9f8f1b6a-1be8-47bd-bd4b-3eec4fc7bdb6"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:31.539879+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:31.565953+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "9aea3cb5-ed10-4c0f-ae5c-3c8f31454289"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:37:31.567023+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:38:11.208183+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "16b6ef36-b914-4868-b143-2fedb418e4ae"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:38:11.208183+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:38:11.233973+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "4ed559b8-009d-4716-b0c7-b68d0de3f29b"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:38:11.246131+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:38:11.252603+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "9b86be03-1b0a-48e2-aee2-424e502bb73b"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:38:11.252603+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T05:38:11.278108+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "1fdc153c-36d3-4671-9b5d-06043ee66a17"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:38:11.292546+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:03.968270+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "d7df1c70-192a-408a-ba86-b892acdb40ed"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:03.981829+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:03.998506+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "144b7409-6403-459c-ad0d-321e5afeada0"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:03.998506+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:04.015213+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "93fadd97-bedc-4e49-bf32-98dddff1af90"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:04.031802+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:04.049389+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "b02af2a0-7ab3-419a-bb44-940f9527c1d0"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:04.053900+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:46.226525+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "449b9e5e-072a-4823-bf2c-c2d69d1ecb11"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:46.236523+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:46.255527+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "16c8ddf4-e1a3-4a5e-81bb-fdf62ddded55"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:46.269521+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:46.286527+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "c8766936-184c-4f48-bdcc-27a2b812d1ad"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:46.295526+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:46.319529+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "6d0d119c-4f4e-4066-80d6-c64dfcdd0ece"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:39:46.330547+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:31.946881+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "5c57a4c0-d74a-462e-a10a-7083f7db070a"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:31.961901+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:31.984888+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "928acb5f-f205-4160-883f-c791d1141aea"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:31.998884+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:32.027918+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "abed484b-cb0a-43e8-895f-85006aa1d66a"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:32.044901+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:32.071882+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "99dd9c26-5449-4b85-b720-f6e91bac6af2"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:32.083878+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:49.938007+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "b08e9bb9-ed42-432a-a460-d3abb3bb5b8b"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:49.952003+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:49.974004+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "e2d7fcbf-00e1-45bf-ba72-c05cd1400faf"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:49.985001+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:50.009007+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "3cd9c3a0-6bd5-4742-a9c1-eaf8236a681c"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:50.019999+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:50.049001+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "8f5a7e53-a96f-48ec-b3bb-c4fe289e19a8"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:40:50.064002+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:41:21.470071+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "91234ad8-bee2-4f5f-b6f6-469bee9ee387"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:41:21.481070+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:41:21.506074+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "522d07ca-2a30-4865-ba74-21ac887a69dd"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:41:21.523073+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:41:21.540075+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "d434847f-48cd-41cd-b748-b77e8595819a"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:41:21.549072+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T05:41:21.568071+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "56c240a6-cf05-48cd-a7e6-d6b8c17594bb"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:41:21.584071+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:09.938590+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "6654270c-f67c-4a20-b18f-a3a10ad99cc1"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:09.945573+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:09.969575+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "b1d5e753-5ef0-4b44-b70d-4e5ded1a5d2a"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:09.976579+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:09.994573+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "4eeb62a2-36cc-439a-9525-8a480038f93f"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:10.005578+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:10.027572+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "ccbbcaba-ddea-4fc2-911c-61849aa4aa60"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:10.038575+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:10.620103+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "00ee12fd-6c1a-439f-886c-36f3960629bd"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:15.829053+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:15.846936+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "e3a5df6e-f277-44ac-83d5-3cdaca03ed87"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:17.613152+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:17.695147+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "f63af74d-557a-4216-bc05-b0661a83b2f0"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:18.557449+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "deleted": "record-1"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:18.574449+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "2622169e-fd09-4afb-83a8-0b1d4946cb6e"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:19.482608+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:37.665918+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "1ee63448-c45d-4a9d-895c-9c22d510bd43"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:37.682916+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:37.701914+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "17e7806b-e8b8-422c-bdcc-5badf69c3f12"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:37.710914+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:37.734926+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "b4b4274e-c412-4676-bd58-1959352bf34c"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:37.743914+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:37.770911+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "63ce7634-9112-48ec-825c-0cfa141ab067"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:37.780915+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:42:38.194969+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "52d19601-adac-428e-82c2-6e26da8edc6e"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:43:11.470400+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:43:11.489379+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "22034bfb-6e4a-404a-8259-2d8ef6477395"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:43:12.440515+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:43:12.462513+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "67609d8f-2e0e-48cf-b251-179135112590"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:43:13.114515+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "deleted": "record-1"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T05:43:13.138546+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "dd808a49-7179-4cb3-b648-2582596cf460"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T05:43:13.965435+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:16.621760+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "0c53655e-082b-4eae-9cde-c7323ea4b8a0"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:16.637472+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:16.664998+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "ff0d9574-83d7-400c-a616-004cf71c5f35"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:16.677716+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:16.702795+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "6c321791-b036-4b15-b633-07f45274aa79"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:16.721531+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:16.750533+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "23a5dce5-88f3-4725-9b17-45181fdaea45"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:16.763044+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:36.148163+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "30ffa302-f5aa-4718-8c6d-069c53e98cf6"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:36.159183+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:36.195185+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "3d0da8ac-304b-4420-a39a-6e6d36fe06ff"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:36.213575+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:36.240831+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "b90e1c3a-51e4-4ac3-8c23-3c4f05abb53b"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:36.263012+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:36.297487+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "86d782f9-de01-48c9-91e3-286b4f8f8d7a"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:36.316387+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:48.599709+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "f99f770a-5283-45b2-9a69-14a1086597ed"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:48.614239+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:48.645815+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "19d21143-cc16-4ccc-99f4-a2ea7d54bebb"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:48.662787+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:48.694934+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "32391eab-eacf-4e26-be76-5875f073d674"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:48.717327+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:48.752456+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "daf45f8d-7f30-4773-90e6-bbcc27243228"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:16:48.772694+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:17:33.214599+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "ea00103a-a143-42e0-8b6d-33a2cb9922bf"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:17:33.232570+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:17:33.266181+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "a49afd0f-65d0-498b-83a0-800f0d1c61ce"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:17:33.289586+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:17:33.323123+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "4e9e26ae-4adf-4afc-9a65-205aaf9fc423"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:17:33.347551+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T06:17:33.383169+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "f865a14b-581a-4853-ac20-382986649e9f"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:17:33.399187+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:06.673649+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "b58aa163-b65a-472b-a97e-16d4315292e8"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:06.693837+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:06.737711+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "7a0080d0-ef8b-4294-aca2-524de01a6a0b"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:06.755950+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:06.779576+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "5dc53487-6bd1-438e-9b34-500e6e2923f4"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:06.798639+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:06.828469+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "9855be57-abab-456d-b4f2-f2d869e7cf83"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:06.848706+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:22.173524+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "d8717f4c-1593-4ae4-8d4e-f7a9bb6535fc"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:22.202305+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:22.219543+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "13c8d6e0-a93a-4e40-ac7b-c2bb72ef140b"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:22.238531+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:22.259231+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "f625b885-3f02-482c-a371-2928ffa16d60"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:22.277253+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:22.304572+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "566b230e-69f0-4b2a-9ebf-df3b99a2391a"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:22.320704+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T06:18:22.836471+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "9aef356b-0ac0-4c4e-8db5-e4e4e1e453e0"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:21:56.520767+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "3520cfdc-7c7f-424e-85ab-4ed275fac0f1"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:21:56.548209+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T09:21:56.575106+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "fd384e18-3159-45c5-a1b7-9500757d7fb0"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:21:56.597610+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T09:21:56.631068+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "5b974143-186a-492b-a653-db9341ff3feb"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:21:56.654539+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T09:21:56.676106+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "1e5c986d-a51e-4661-9320-e94c1992c0be"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:21:56.697495+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T09:21:57.669690+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "0f381748-5378-4d4f-bed1-7b4c6c8686ea"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:02.570747+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:02.616863+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "bea6d8a6-6098-4476-9dfe-32a04e518786"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:05.480784+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:05.520168+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "ad85c7c9-a4c7-4d31-8a02-25569b116a85"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:06.815433+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:06.859676+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "1f5c1a56-48dd-4c1e-92cb-3d4656423ffd"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:07.931742+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:12.427979+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "3a5db906-56f5-4943-9532-8baba3efcfd4"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:12.446491+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:12.470402+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "214b03d6-0098-4d38-9216-9dcef474b2f0"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:12.491292+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:12.518407+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "3d6a8ad8-7ccd-4796-8be3-5267945c7554"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:12.536813+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "error": "Human rejected the action."
+    },
+    "approval_status": "rejected"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:12.555947+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "2e277477-6b36-4c70-a623-bba054cdab71"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:12.574512+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:12.936751+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "approval_request_id": "0a3b52db-9e42-48d1-bf71-6474c8277fc6"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:29.723893+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "send_message",
+    "arguments": {
+      "recipient": "team@example.test",
+      "message": "The rollout is ready."
+    },
+    "result": {
+      "sent": true,
+      "recipient": "team@example.test"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:29.759894+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "approval_request_id": "2789d3c2-05c7-4628-91e6-4ce59bb6d9d2"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:30.406031+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "modify_record",
+    "arguments": {
+      "record_id": "record-1",
+      "field": "status",
+      "value": "ready"
+    },
+    "result": {
+      "updated": "record-1",
+      "field": "status"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:30.439110+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "approval_request_id": "1f5a7ce4-900a-4e39-8bc6-b429f47b715c"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:30.748656+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "delete_record",
+    "arguments": {
+      "record_id": "record-1"
+    },
+    "result": {
+      "deleted": "record-1"
+    },
+    "approval_status": "approved"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:30.788409+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "approval_request_id": "b52e9c3c-eeb8-4580-aca0-f758502757ed"
+    },
+    "approval_status": "pending"
+  },
+  {
+    "timestamp": "2026-10-01T09:22:31.568947+00:00",
+    "requested_by": "demo-user",
+    "agent": "Admin Agent",
+    "tool": "external_operation",
+    "arguments": {
+      "operation": "sync-demo",
+      "payload": "record-1"
+    },
+    "result": {
+      "queued": true,
+      "operation": "sync-demo"
+    },
+    "approval_status": "approved"
+  }
+]

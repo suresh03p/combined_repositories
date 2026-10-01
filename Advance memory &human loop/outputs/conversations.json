@@ -1,0 +1,2304 @@
+{
+  "aecdeb30-581c-4768-b640-ab2291328e59": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:06:43.982149+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: b9f389c9-5789-4a83-9e96-351084278663",
+        "timestamp": "2026-10-01T05:06:43.987950+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:06:43.996087+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:06:43.997927+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: d3617902-9838-4fbf-86b5-e7f16d64f161",
+        "timestamp": "2026-10-01T05:06:44.003720+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:06:44.009556+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:06:44.012869+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: c5c9e1b6-ea4a-417d-8b25-38cfb19ed240",
+        "timestamp": "2026-10-01T05:06:44.020096+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T05:06:44.027794+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:06:44.029278+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 48d0eaa9-f98a-4381-b0b4-8c4ff8a327b0",
+        "timestamp": "2026-10-01T05:06:44.034126+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:06:44.038085+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:06:43.984498+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:06:43.999610+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:06:44.014638+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:06:44.030695+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "992db6a9-39db-458f-a496-a57fd6d41eec": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:37:00.190373+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: b2856580-c236-4bd2-bab6-fe3ec526ddc9",
+        "timestamp": "2026-10-01T05:37:00.249203+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:37:00.294222+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:37:00.300896+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 257a1763-e79f-4860-adbe-f530f93b7080",
+        "timestamp": "2026-10-01T05:37:00.331735+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:37:00.353222+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:37:00.359329+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: c7ddf878-a619-49b7-8c89-39efedcbaf26",
+        "timestamp": "2026-10-01T05:37:00.368686+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T05:37:00.374072+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:37:00.389946+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 44673832-a39a-4b96-902a-c59fd05457f8",
+        "timestamp": "2026-10-01T05:37:00.402568+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:37:00.411435+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:37:00.234087+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:37:00.306542+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:37:00.361112+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:37:00.393910+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "ef63ada4-110a-4637-900d-7cd7829a09ba": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:37:31.489730+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 80abc830-91fa-41ef-a513-67b56b68a7a7",
+        "timestamp": "2026-10-01T05:37:31.506740+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:37:31.506740+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:37:31.506740+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: beba4174-a577-4983-bed1-c744e1bc9b95",
+        "timestamp": "2026-10-01T05:37:31.523192+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:37:31.523192+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:37:31.539879+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 9f8f1b6a-1be8-47bd-bd4b-3eec4fc7bdb6",
+        "timestamp": "2026-10-01T05:37:31.539879+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T05:37:31.556465+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:37:31.556465+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 9aea3cb5-ed10-4c0f-ae5c-3c8f31454289",
+        "timestamp": "2026-10-01T05:37:31.567023+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:37:31.575695+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:37:31.506740+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:37:31.523192+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:37:31.539879+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:37:31.563805+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "d2f64b2b-ca72-445f-a6f1-831707cfe439": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:38:11.208183+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 16b6ef36-b914-4868-b143-2fedb418e4ae",
+        "timestamp": "2026-10-01T05:38:11.208183+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:38:11.227401+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:38:11.228968+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 4ed559b8-009d-4716-b0c7-b68d0de3f29b",
+        "timestamp": "2026-10-01T05:38:11.244132+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:38:11.247190+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:38:11.252603+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 9b86be03-1b0a-48e2-aee2-424e502bb73b",
+        "timestamp": "2026-10-01T05:38:11.252603+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T05:38:11.277072+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:38:11.278108+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 1fdc153c-36d3-4671-9b5d-06043ee66a17",
+        "timestamp": "2026-10-01T05:38:11.286034+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:38:11.292546+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:38:11.208183+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:38:11.231973+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:38:11.252603+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:38:11.278108+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "8a4ab224-95db-465b-8c6d-a8e13fd5693c": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:39:03.968270+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: d7df1c70-192a-408a-ba86-b892acdb40ed",
+        "timestamp": "2026-10-01T05:39:03.981829+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:39:03.981829+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:39:03.998506+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 144b7409-6403-459c-ad0d-321e5afeada0",
+        "timestamp": "2026-10-01T05:39:03.998506+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:39:03.998506+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:39:04.015213+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 93fadd97-bedc-4e49-bf32-98dddff1af90",
+        "timestamp": "2026-10-01T05:39:04.015213+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T05:39:04.031802+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:39:04.031802+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: b02af2a0-7ab3-419a-bb44-940f9527c1d0",
+        "timestamp": "2026-10-01T05:39:04.053900+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:39:04.068084+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:39:03.968270+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:39:03.998506+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:39:04.015213+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:39:04.047392+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "4ff3cb91-75b2-462b-850c-369781ad142a": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:39:46.220526+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 449b9e5e-072a-4823-bf2c-c2d69d1ecb11",
+        "timestamp": "2026-10-01T05:39:46.233526+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:39:46.242526+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:39:46.247529+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 16c8ddf4-e1a3-4a5e-81bb-fdf62ddded55",
+        "timestamp": "2026-10-01T05:39:46.266525+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:39:46.275525+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:39:46.280545+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: c8766936-184c-4f48-bdcc-27a2b812d1ad",
+        "timestamp": "2026-10-01T05:39:46.290528+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T05:39:46.303525+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:39:46.307525+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 6d0d119c-4f4e-4066-80d6-c64dfcdd0ece",
+        "timestamp": "2026-10-01T05:39:46.324524+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:39:46.340525+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:39:46.223544+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:39:46.251525+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:39:46.283525+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:39:46.315527+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "aa3e6cda-4ba2-42ad-9457-c5722ecc0ca3": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:40:31.936879+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 5c57a4c0-d74a-462e-a10a-7083f7db070a",
+        "timestamp": "2026-10-01T05:40:31.954881+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:40:31.969879+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:40:31.975880+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 928acb5f-f205-4160-883f-c791d1141aea",
+        "timestamp": "2026-10-01T05:40:31.992883+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:40:32.008881+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:40:32.014884+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: abed484b-cb0a-43e8-895f-85006aa1d66a",
+        "timestamp": "2026-10-01T05:40:32.037893+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T05:40:32.052889+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:40:32.057878+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 99dd9c26-5449-4b85-b720-f6e91bac6af2",
+        "timestamp": "2026-10-01T05:40:32.079877+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:40:32.097879+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:40:31.941885+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:40:31.981883+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:40:32.019878+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:40:32.064885+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "8df2c63e-630f-4c3b-8f48-4ebc05b6cc35": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:40:49.931002+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: b08e9bb9-ed42-432a-a460-d3abb3bb5b8b",
+        "timestamp": "2026-10-01T05:40:49.948005+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:40:49.962005+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:40:49.966006+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: e2d7fcbf-00e1-45bf-ba72-c05cd1400faf",
+        "timestamp": "2026-10-01T05:40:49.981002+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:40:49.995001+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:40:49.999006+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 3cd9c3a0-6bd5-4742-a9c1-eaf8236a681c",
+        "timestamp": "2026-10-01T05:40:50.016002+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T05:40:50.033003+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:40:50.037002+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 8f5a7e53-a96f-48ec-b3bb-c4fe289e19a8",
+        "timestamp": "2026-10-01T05:40:50.058004+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:40:50.073002+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:40:49.934002+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:40:49.970003+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:40:50.004004+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:40:50.044002+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "da317b85-d8d5-4e71-9f4a-4c77312f57d5": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:41:21.461077+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 91234ad8-bee2-4f5f-b6f6-469bee9ee387",
+        "timestamp": "2026-10-01T05:41:21.477073+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:41:21.494073+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:41:21.496080+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 522d07ca-2a30-4865-ba74-21ac887a69dd",
+        "timestamp": "2026-10-01T05:41:21.514070+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:41:21.530071+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:41:21.533070+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: d434847f-48cd-41cd-b748-b77e8595819a",
+        "timestamp": "2026-10-01T05:41:21.546068+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T05:41:21.557073+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:41:21.560071+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 56c240a6-cf05-48cd-a7e6-d6b8c17594bb",
+        "timestamp": "2026-10-01T05:41:21.579076+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:41:21.593071+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:41:21.466073+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:41:21.501076+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:41:21.538072+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:41:21.566071+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "cbae4e8c-27ea-407b-b508-81707420af3f": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:42:09.932589+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 6654270c-f67c-4a20-b18f-a3a10ad99cc1",
+        "timestamp": "2026-10-01T05:42:09.942613+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:42:09.951575+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:42:09.953578+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: b1d5e753-5ef0-4b44-b70d-4e5ded1a5d2a",
+        "timestamp": "2026-10-01T05:42:09.973601+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:42:09.982592+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:42:09.985592+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 4eeb62a2-36cc-439a-9525-8a480038f93f",
+        "timestamp": "2026-10-01T05:42:10.002576+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T05:42:10.014577+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:42:10.021575+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: ccbbcaba-ddea-4fc2-911c-61849aa4aa60",
+        "timestamp": "2026-10-01T05:42:10.035577+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:42:10.049576+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:42:09.936576+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:42:09.963605+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:42:09.991580+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:42:10.024576+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "f98266dd-8f69-4690-a039-d14a12c4e9c6": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:42:10.613141+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 00ee12fd-6c1a-439f-886c-36f3960629bd",
+        "timestamp": "2026-10-01T05:42:10.626101+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:42:15.834873+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:42:15.837873+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: e3a5df6e-f277-44ac-83d5-3cdaca03ed87",
+        "timestamp": "2026-10-01T05:42:15.859879+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:42:17.665180+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:42:17.675146+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: f63af74d-557a-4216-bc05-b0661a83b2f0",
+        "timestamp": "2026-10-01T05:42:17.705148+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:42:18.563445+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:42:18.567449+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 2622169e-fd09-4afb-83a8-0b1d4946cb6e",
+        "timestamp": "2026-10-01T05:42:18.581449+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:42:19.488608+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:42:10.617102+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:42:15.842874+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:42:17.687148+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:42:18.571446+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "06d0d92d-3f4d-404e-856a-9b2368fd179b": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:42:37.659882+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 1ee63448-c45d-4a9d-895c-9c22d510bd43",
+        "timestamp": "2026-10-01T05:42:37.675917+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:42:37.690927+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:42:37.693915+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 17e7806b-e8b8-422c-bdcc-5badf69c3f12",
+        "timestamp": "2026-10-01T05:42:37.708916+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:42:37.719914+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:42:37.724920+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: b4b4274e-c412-4676-bd58-1959352bf34c",
+        "timestamp": "2026-10-01T05:42:37.740912+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T05:42:37.753913+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:42:37.758916+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 63ce7634-9112-48ec-825c-0cfa141ab067",
+        "timestamp": "2026-10-01T05:42:37.775910+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:42:37.788927+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:42:37.663917+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:42:37.698918+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:42:37.730914+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:42:37.768914+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "7d771b0b-57d4-4505-bb48-7bd7c9907181": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T05:42:38.185967+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 52d19601-adac-428e-82c2-6e26da8edc6e",
+        "timestamp": "2026-10-01T05:42:38.200967+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:43:11.476376+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T05:43:11.483380+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 22034bfb-6e4a-404a-8259-2d8ef6477395",
+        "timestamp": "2026-10-01T05:43:11.503377+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:43:12.447547+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T05:43:12.450516+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 67609d8f-2e0e-48cf-b251-179135112590",
+        "timestamp": "2026-10-01T05:43:12.479543+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:43:13.121511+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T05:43:13.124512+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: dd808a49-7179-4cb3-b648-2582596cf460",
+        "timestamp": "2026-10-01T05:43:13.150523+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T05:43:13.976441+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T05:42:38.190973+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T05:43:11.487387+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T05:43:12.458514+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T05:43:13.132518+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "cbc8b29c-1642-45cb-aa34-e8a054e3faf0": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T06:16:16.603593+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 0c53655e-082b-4eae-9cde-c7323ea4b8a0",
+        "timestamp": "2026-10-01T06:16:16.634129+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:16:16.649303+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T06:16:16.653794+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: ff0d9574-83d7-400c-a616-004cf71c5f35",
+        "timestamp": "2026-10-01T06:16:16.671685+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:16:16.688558+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T06:16:16.692202+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 6c321791-b036-4b15-b633-07f45274aa79",
+        "timestamp": "2026-10-01T06:16:16.715857+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T06:16:16.730878+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T06:16:16.737121+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 23a5dce5-88f3-4725-9b17-45181fdaea45",
+        "timestamp": "2026-10-01T06:16:16.758227+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:16:16.776664+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T06:16:16.617961+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T06:16:16.658927+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T06:16:16.699245+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T06:16:16.743364+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "1c16400c-ebff-4993-9128-6ef4d6920c80": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T06:16:36.135636+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 30ffa302-f5aa-4718-8c6d-069c53e98cf6",
+        "timestamp": "2026-10-01T06:16:36.155493+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:16:36.173756+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T06:16:36.177334+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 3d0da8ac-304b-4420-a39a-6e6d36fe06ff",
+        "timestamp": "2026-10-01T06:16:36.206247+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:16:36.223576+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T06:16:36.229718+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: b90e1c3a-51e4-4ac3-8c23-3c4f05abb53b",
+        "timestamp": "2026-10-01T06:16:36.252387+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T06:16:36.272512+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T06:16:36.279899+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 86d782f9-de01-48c9-91e3-286b4f8f8d7a",
+        "timestamp": "2026-10-01T06:16:36.310627+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:16:36.329191+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T06:16:36.140966+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T06:16:36.189117+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T06:16:36.236403+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T06:16:36.287153+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "ba7c754f-8ef7-4dd0-b2b4-1874c7868f10": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T06:16:48.588436+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: f99f770a-5283-45b2-9a69-14a1086597ed",
+        "timestamp": "2026-10-01T06:16:48.608085+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:16:48.623467+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T06:16:48.630930+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 19d21143-cc16-4ccc-99f4-a2ea7d54bebb",
+        "timestamp": "2026-10-01T06:16:48.654769+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:16:48.673234+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T06:16:48.679237+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 32391eab-eacf-4e26-be76-5875f073d674",
+        "timestamp": "2026-10-01T06:16:48.710749+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T06:16:48.732998+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T06:16:48.738917+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: daf45f8d-7f30-4773-90e6-bbcc27243228",
+        "timestamp": "2026-10-01T06:16:48.765570+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:16:48.787848+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T06:16:48.595674+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T06:16:48.642137+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T06:16:48.687289+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T06:16:48.749058+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "701dadfc-86bd-462e-8dbc-bb0228667e01": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T06:17:33.200360+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: ea00103a-a143-42e0-8b6d-33a2cb9922bf",
+        "timestamp": "2026-10-01T06:17:33.227172+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:17:33.246333+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T06:17:33.251947+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: a49afd0f-65d0-498b-83a0-800f0d1c61ce",
+        "timestamp": "2026-10-01T06:17:33.284608+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:17:33.304448+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T06:17:33.312223+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 4e9e26ae-4adf-4afc-9a65-205aaf9fc423",
+        "timestamp": "2026-10-01T06:17:33.338781+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T06:17:33.363552+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T06:17:33.372529+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: f865a14b-581a-4853-ac20-382986649e9f",
+        "timestamp": "2026-10-01T06:17:33.395076+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:17:33.412534+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T06:17:33.208765+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T06:17:33.260926+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T06:17:33.316590+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T06:17:33.380202+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "172447c6-ad12-4023-b441-4c48a426deb1": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T06:18:06.660760+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: b58aa163-b65a-472b-a97e-16d4315292e8",
+        "timestamp": "2026-10-01T06:18:06.685098+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:18:06.711761+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T06:18:06.721929+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 7a0080d0-ef8b-4294-aca2-524de01a6a0b",
+        "timestamp": "2026-10-01T06:18:06.748946+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:18:06.764100+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T06:18:06.769427+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 5dc53487-6bd1-438e-9b34-500e6e2923f4",
+        "timestamp": "2026-10-01T06:18:06.793581+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T06:18:06.810253+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T06:18:06.815422+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 9855be57-abab-456d-b4f2-f2d869e7cf83",
+        "timestamp": "2026-10-01T06:18:06.840721+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:18:06.864458+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T06:18:06.666235+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T06:18:06.729499+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T06:18:06.774957+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T06:18:06.825001+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "bee7d99d-f8ea-4944-9057-87348909c578": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T06:18:22.167812+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: d8717f4c-1593-4ae4-8d4e-f7a9bb6535fc",
+        "timestamp": "2026-10-01T06:18:22.191769+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:18:22.209345+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T06:18:22.212477+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 13c8d6e0-a93a-4e40-ac7b-c2bb72ef140b",
+        "timestamp": "2026-10-01T06:18:22.230834+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:18:22.245851+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T06:18:22.253294+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: f625b885-3f02-482c-a371-2928ffa16d60",
+        "timestamp": "2026-10-01T06:18:22.271776+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T06:18:22.289494+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T06:18:22.293084+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 566b230e-69f0-4b2a-9ebf-df3b99a2391a",
+        "timestamp": "2026-10-01T06:18:22.318673+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T06:18:22.329781+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T06:18:22.173524+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T06:18:22.218505+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T06:18:22.258200+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T06:18:22.298217+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "41e4a1d3-8959-452a-abc3-4aeba1f308be": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T06:18:22.830884+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 9aef356b-0ac0-4c4e-8db5-e4e4e1e453e0",
+        "timestamp": "2026-10-01T06:18:22.846491+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T06:18:22.836471+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "7f5e9c40-c9c4-4e6d-a931-a85c6b3f9b93": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T09:21:56.496096+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 3520cfdc-7c7f-424e-85ab-4ed275fac0f1",
+        "timestamp": "2026-10-01T09:21:56.541684+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T09:21:56.560023+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T09:21:56.563565+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: fd384e18-3159-45c5-a1b7-9500757d7fb0",
+        "timestamp": "2026-10-01T09:21:56.585067+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T09:21:56.617854+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T09:21:56.622072+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 5b974143-186a-492b-a653-db9341ff3feb",
+        "timestamp": "2026-10-01T09:21:56.648052+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T09:21:56.663241+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T09:21:56.666799+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 1e5c986d-a51e-4661-9320-e94c1992c0be",
+        "timestamp": "2026-10-01T09:21:56.688300+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T09:21:56.708139+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T09:21:56.507266+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T09:21:56.571777+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T09:21:56.627468+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T09:21:56.672775+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "ea3bdfbc-6199-470b-a9fe-80a458d686bc": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T09:21:57.625550+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 0f381748-5378-4d4f-bed1-7b4c6c8686ea",
+        "timestamp": "2026-10-01T09:21:57.722666+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T09:22:02.582931+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T09:22:02.598685+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: bea6d8a6-6098-4476-9dfe-32a04e518786",
+        "timestamp": "2026-10-01T09:22:02.633027+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T09:22:05.490149+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T09:22:05.495859+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: ad85c7c9-a4c7-4d31-8a02-25569b116a85",
+        "timestamp": "2026-10-01T09:22:05.536313+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T09:22:06.829243+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T09:22:06.841362+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 1f5c1a56-48dd-4c1e-92cb-3d4656423ffd",
+        "timestamp": "2026-10-01T09:22:06.877571+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T09:22:07.939036+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T09:21:57.642498+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T09:22:02.608609+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T09:22:05.506838+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T09:22:06.854840+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "b5f7692e-193e-4ca7-b238-b2372044ff56": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T09:22:12.417306+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 3a5db906-56f5-4943-9532-8baba3efcfd4",
+        "timestamp": "2026-10-01T09:22:12.440834+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T09:22:12.456377+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T09:22:12.460314+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 214b03d6-0098-4d38-9216-9dcef474b2f0",
+        "timestamp": "2026-10-01T09:22:12.483183+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T09:22:12.501389+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T09:22:12.505541+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 3d6a8ad8-7ccd-4796-8be3-5267945c7554",
+        "timestamp": "2026-10-01T09:22:12.530306+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: rejected.",
+        "timestamp": "2026-10-01T09:22:12.545081+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T09:22:12.548903+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 2e277477-6b36-4c70-a623-bba054cdab71",
+        "timestamp": "2026-10-01T09:22:12.572511+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T09:22:12.589320+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T09:22:12.423037+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T09:22:12.466821+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T09:22:12.510438+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T09:22:12.555947+00:00"
+      }
+    ],
+    "important_context": []
+  },
+  "d8d75669-b1b2-4338-b1f4-404b8d2ea06b": {
+    "messages": [
+      {
+        "speaker": "user",
+        "content": "Send the rollout message to the team.",
+        "timestamp": "2026-10-01T09:22:12.931449+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 0a3b52db-9e42-48d1-bf71-6474c8277fc6",
+        "timestamp": "2026-10-01T09:22:12.951541+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T09:22:29.730310+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Update the demo record status.",
+        "timestamp": "2026-10-01T09:22:29.737314+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 2789d3c2-05c7-4628-91e6-4ce59bb6d9d2",
+        "timestamp": "2026-10-01T09:22:29.780503+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T09:22:30.419266+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Delete the demo record.",
+        "timestamp": "2026-10-01T09:22:30.431853+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: 1f5a7ce4-900a-4e39-8bc6-b429f47b715c",
+        "timestamp": "2026-10-01T09:22:30.459789+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T09:22:30.768186+00:00"
+      },
+      {
+        "speaker": "user",
+        "content": "Queue the demo synchronization operation.",
+        "timestamp": "2026-10-01T09:22:30.782716+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Action pending_approval: b52e9c3c-eeb8-4580-aca0-f758502757ed",
+        "timestamp": "2026-10-01T09:22:30.809970+00:00"
+      },
+      {
+        "speaker": "agent",
+        "content": "Human decision: completed.",
+        "timestamp": "2026-10-01T09:22:31.576471+00:00"
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "send_message",
+        "arguments": {
+          "recipient": "team@example.test",
+          "message": "The rollout is ready."
+        },
+        "timestamp": "2026-10-01T09:22:12.936751+00:00"
+      },
+      {
+        "tool": "modify_record",
+        "arguments": {
+          "record_id": "record-1",
+          "field": "status",
+          "value": "ready"
+        },
+        "timestamp": "2026-10-01T09:22:29.749241+00:00"
+      },
+      {
+        "tool": "delete_record",
+        "arguments": {
+          "record_id": "record-1"
+        },
+        "timestamp": "2026-10-01T09:22:30.439110+00:00"
+      },
+      {
+        "tool": "external_operation",
+        "arguments": {
+          "operation": "sync-demo",
+          "payload": "record-1"
+        },
+        "timestamp": "2026-10-01T09:22:30.788409+00:00"
+      }
+    ],
+    "important_context": []
+  }
+}
