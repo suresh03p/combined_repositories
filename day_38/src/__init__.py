@@ -1,1 +1,0 @@
-"""Parallel multi-agent research engine."""
