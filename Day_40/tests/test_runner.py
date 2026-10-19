@@ -8,9 +8,22 @@ from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
 from durable_agent_runner.api import create_server
+from durable_agent_runner.handoffs import make_handoff
 from durable_agent_runner.models import ExecutionStatus
 from durable_agent_runner.runner import DurableAgentRunner, STEP_NAMES
 from durable_agent_runner.store import ExecutionStore, IdempotencyConflict
+
+
+def valid_handoff(step: str, task_id: str):
+    payloads = {
+        "plan": {"goal": "test goal", "research_questions": ["test question"]},
+        "research": {
+            "findings": [{"claim": "test claim", "evidence": "test evidence"}],
+            "limitations": [],
+        },
+        "respond": {"accepted": True, "answer": "test answer", "issues": []},
+    }
+    return make_handoff(step, task_id, payloads[step])
 
 
 class SimulatedProcessCrash(BaseException):
@@ -75,7 +88,7 @@ class DurableAgentRunnerTests(unittest.TestCase):
                 if step == "research" and crash_once:
                     crash_once = False
                     raise SimulatedProcessCrash()
-                return {"step": step, "input": context.input_text}
+                return valid_handoff(step, context.task_id)
             return handle
 
         handlers = {step: handler_for(step) for step in STEP_NAMES}
@@ -111,7 +124,7 @@ class DurableAgentRunnerTests(unittest.TestCase):
                 calls[step] += 1
                 if step == "research" and calls[step] == 1:
                     raise RuntimeError("temporary tool error")
-                return {"step": step}
+                return valid_handoff(step, context.task_id)
             return handler
 
         self.runner.close()
@@ -141,7 +154,7 @@ class DurableAgentRunnerTests(unittest.TestCase):
                 if step == "plan" and calls[step] == 1:
                     entered.set()
                     self.assertTrue(release.wait(timeout=3))
-                return {"step": step}
+                return valid_handoff(step, context.task_id)
             return handler
 
         self.runner.close()
@@ -173,7 +186,7 @@ class DurableAgentRunnerTests(unittest.TestCase):
                 if step == "plan":
                     entered.set()
                     self.assertTrue(release.wait(timeout=3))
-                return {"step": step}
+                return valid_handoff(step, context.task_id)
             return handler
 
         self.runner.close()
@@ -189,6 +202,45 @@ class DurableAgentRunnerTests(unittest.TestCase):
         cancelled = self.runner.wait_for(execution["task_id"])
         self.assertEqual(cancelled["status"], ExecutionStatus.CANCELLED)
         self.assertEqual(calls, {"plan": 1, "research": 0, "respond": 0})
+
+    def test_malformed_handoff_fails_execution_before_next_role_runs(self) -> None:
+        calls = {"research": 0, "respond": 0}
+
+        def malformed_plan(context):
+            return {
+                "schema_version": "1.0",
+                "from_role": "planner",
+                "to_role": "validator",
+                "task_id": context.task_id,
+                "status": "completed",
+                "payload": {
+                    "goal": "invalid route",
+                    "research_questions": ["question"],
+                },
+            }
+
+        def later_step(step):
+            def handler(context):
+                calls[step] += 1
+                return valid_handoff(step, context.task_id)
+            return handler
+
+        self.runner.close()
+        self.runner = DurableAgentRunner(
+            self.store,
+            {
+                "plan": malformed_plan,
+                "research": later_step("research"),
+                "respond": later_step("respond"),
+            },
+            recover_on_start=False,
+        )
+        execution, _ = self.runner.create_execution("reject bad handoff", "bad-handoff")
+        failed = self.runner.wait_for(execution["task_id"])
+
+        self.assertEqual(failed["status"], ExecutionStatus.FAILED)
+        self.assertIn("to_role must be 'researcher'", failed["errors"][0]["message"])
+        self.assertEqual(calls, {"research": 0, "respond": 0})
 
 
 class ExecutionAPITests(unittest.TestCase):

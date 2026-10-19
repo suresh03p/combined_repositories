@@ -37,7 +37,19 @@ Execution states are `queued`, `running`, `waiting`, `completed`, `failed`, and 
 
 SQLite is the source of truth. Each step is marked running before it is called, then its output and the next-step pointer are committed together as a checkpoint. At startup, queued or interrupted running executions are recovered and rescheduled; completed checkpoints are skipped. A step interrupted between starting and persisting its output is retried with the same `<task_id>:<step_name>` idempotency key.
 
-The built-in workflow is a deterministic offline demo (`plan -> research -> respond`), not an LLM. When integrating external tools, pass the supplied step idempotency key through to the provider/tool and require that tool to deduplicate it. SQLite cannot make an arbitrary external side effect and a local database commit one atomic transaction; provider-side idempotency is necessary to close that crash window.
+The built-in workflow is a deterministic offline demo (`plan -> research -> respond`), not an LLM. Its role boundaries are:
+
+| Checkpoint | Role | Input | Successful output / next recipient |
+| --- | --- | --- | --- |
+| `plan` | planner | Execution task ID, user goal, and step idempotency key | Goal and non-empty research questions -> researcher |
+| `research` | researcher | Validated planner handoff | One or more claim/evidence findings and limitations -> validator |
+| `respond` | validator | Validated researcher handoff | Accepted flag, answer, and issues -> terminal |
+
+Each output is a strict JSON handoff envelope with schema version `1.0`, sender, recipient, execution task ID, status, and role-specific payload. Unknown fields, missing fields, wrong recipients, mismatched task IDs, and invalid payloads are rejected before checkpointing; the execution becomes `failed`, and later roles are not run. A structured `status: "error"` handoff also fails the current execution with its error code and message. The existing checkpoint names are retained for compatibility while role names describe the agent responsibilities.
+
+The JSON Schema documents are in `schemas/agent-handoff.schema.json` and `schemas/role-contracts.schema.json`. Runtime checks use explicit standard-library validation to keep this demo dependency-free. Execution states are `queued -> running`, may enter `waiting` on pause, and finish as `completed`, `failed`, or `cancelled`. Completed and cancelled executions cannot be resumed; failed executions may be explicitly resumed, which retries the failed step without repeating completed checkpoints.
+
+When integrating external tools, pass the supplied step idempotency key through to the provider/tool and require that tool to deduplicate it. SQLite cannot make an arbitrary external side effect and a local database commit one atomic transaction; provider-side idempotency is necessary to close that crash window.
 
 Run one service process against a database at a time. SQLite persists and recovers work across process restarts, but this demo does not implement multi-process worker claiming or distributed coordination.
 
@@ -48,3 +60,5 @@ The HTTP server is intended for local learning and does not include authenticati
 ```powershell
 python -m unittest discover -s tests -v
 ```
+
+The handoff tests cover valid role routing, strict payload validation, wrong recipients/task IDs, unexpected fields, structured error handoffs, and runner behavior when a malformed handoff is returned.
