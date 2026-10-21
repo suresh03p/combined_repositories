@@ -132,6 +132,7 @@ class DurableAgentRunnerTests(unittest.TestCase):
             self.store,
             {step: make_handler(step) for step in STEP_NAMES},
             recover_on_start=False,
+            retry_budget=0,
         )
         execution, _ = self.runner.create_execution("retry me", "retry-key")
         failed = self.runner.wait_for(execution["task_id"])
@@ -201,12 +202,95 @@ class DurableAgentRunnerTests(unittest.TestCase):
         release.set()
         cancelled = self.runner.wait_for(execution["task_id"])
         self.assertEqual(cancelled["status"], ExecutionStatus.CANCELLED)
+        self.assertEqual(
+            cancelled["checkpoints"]["plan"]["status"], "cancelled"
+        )
+        self.assertNotIn("output", cancelled["checkpoints"]["plan"])
         self.assertEqual(calls, {"plan": 1, "research": 0, "respond": 0})
+
+    def test_timed_out_step_retries_with_same_idempotency_key(self) -> None:
+        first_call_started = threading.Event()
+        release_first_call = threading.Event()
+        calls = {step: 0 for step in STEP_NAMES}
+        keys: list[str] = []
+
+        def make_handler(step: str):
+            def handler(context):
+                calls[step] += 1
+                if step == "plan":
+                    keys.append(context.idempotency_key)
+                    if calls[step] == 1:
+                        first_call_started.set()
+                        release_first_call.wait(timeout=2)
+                return valid_handoff(step, context.task_id)
+            return handler
+
+        self.runner.close()
+        self.runner = DurableAgentRunner(
+            self.store,
+            {step: make_handler(step) for step in STEP_NAMES},
+            max_workers=2,
+            recover_on_start=False,
+            step_timeout=0.05,
+            retry_budget=1,
+        )
+        execution, _ = self.runner.create_execution("retry timeout", "timeout-key")
+        self.assertTrue(first_call_started.wait(timeout=1))
+        try:
+            completed = self.runner.wait_for(execution["task_id"], timeout=2)
+        finally:
+            release_first_call.set()
+
+        self.assertEqual(completed["status"], ExecutionStatus.COMPLETED)
+        self.assertEqual(calls["plan"], 2)
+        self.assertEqual(keys, [f"{execution['task_id']}:plan"] * 2)
+        self.assertEqual(
+            completed["checkpoints"]["plan"]["status"], "completed"
+        )
+
+    def test_exhausted_timeout_budget_fails_without_checkpointing_output(self) -> None:
+        entered = threading.Event()
+        release = threading.Event()
+        calls = {"plan": 0, "research": 0, "respond": 0}
+
+        def make_handler(step: str):
+            def handler(context):
+                calls[step] += 1
+                if step == "plan":
+                    entered.set()
+                    release.wait(timeout=2)
+                return valid_handoff(step, context.task_id)
+            return handler
+
+        self.runner.close()
+        self.runner = DurableAgentRunner(
+            self.store,
+            {step: make_handler(step) for step in STEP_NAMES},
+            max_workers=2,
+            recover_on_start=False,
+            step_timeout=0.05,
+            retry_budget=1,
+        )
+        execution, _ = self.runner.create_execution("fail timeout", "timeout-fail")
+        self.assertTrue(entered.wait(timeout=1))
+        try:
+            failed = self.runner.wait_for(execution["task_id"], timeout=2)
+        finally:
+            release.set()
+
+        self.assertEqual(failed["status"], ExecutionStatus.FAILED)
+        self.assertEqual(calls, {"plan": 2, "research": 0, "respond": 0})
+        self.assertEqual(failed["checkpoints"]["plan"]["status"], "failed")
+        self.assertNotIn("output", failed["checkpoints"]["plan"])
+        self.assertIn("TimeoutError", failed["errors"][0]["message"])
 
     def test_malformed_handoff_fails_execution_before_next_role_runs(self) -> None:
         calls = {"research": 0, "respond": 0}
+        malformed_calls = 0
 
         def malformed_plan(context):
+            nonlocal malformed_calls
+            malformed_calls += 1
             return {
                 "schema_version": "1.0",
                 "from_role": "planner",
@@ -240,6 +324,9 @@ class DurableAgentRunnerTests(unittest.TestCase):
 
         self.assertEqual(failed["status"], ExecutionStatus.FAILED)
         self.assertIn("to_role must be 'researcher'", failed["errors"][0]["message"])
+        self.assertEqual(failed["checkpoints"]["plan"]["status"], "failed")
+        self.assertNotIn("output", failed["checkpoints"]["plan"])
+        self.assertEqual(malformed_calls, 1)
         self.assertEqual(calls, {"research": 0, "respond": 0})
 
 

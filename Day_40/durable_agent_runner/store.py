@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import json
 import os
 import sqlite3
@@ -369,12 +371,6 @@ class ExecutionStore:
             execution = self._decode(row)
             checkpoints = execution["checkpoints"]
             idempotency_key = checkpoints[step]["idempotency_key"]
-            checkpoints[step] = {
-                "status": "completed",
-                "idempotency_key": idempotency_key,
-                "output": output,
-                "completed_at": utc_now(),
-            }
             cancelled = execution["cancel_requested"]
             waiting = execution["pause_requested"] and not cancelled
             status = (
@@ -382,6 +378,18 @@ class ExecutionStore:
                 if cancelled
                 else ExecutionStatus.WAITING if waiting else ExecutionStatus.RUNNING
             )
+            if cancelled:
+                checkpoints[step] = {
+                    "status": "cancelled",
+                    "idempotency_key": idempotency_key,
+                }
+            else:
+                checkpoints[step] = {
+                    "status": "completed",
+                    "idempotency_key": idempotency_key,
+                    "output": output,
+                    "completed_at": utc_now(),
+                }
             now = utc_now()
             connection.execute(
                 """
@@ -390,23 +398,38 @@ class ExecutionStore:
                     cancel_requested = 0, pause_requested = 0, updated_at = ?
                 WHERE task_id = ?
                 """,
-                (status, next_step, json.dumps(checkpoints), now, task_id),
+                (
+                    status,
+                    step if cancelled else next_step,
+                    json.dumps(checkpoints),
+                    now,
+                    task_id,
+                ),
             )
-            self._event(
-                connection,
-                task_id,
-                "step_checkpointed",
-                status,
-                step,
-                f"Completed step '{step}'.",
-            )
-            if waiting:
+            if cancelled:
+                self._event(
+                    connection, task_id, "execution_cancelled", status, step
+                )
+            elif waiting:
+                self._event(
+                    connection,
+                    task_id,
+                    "step_checkpointed",
+                    status,
+                    step,
+                    f"Completed step '{step}'.",
+                )
                 self._event(
                     connection, task_id, "execution_waiting", status, next_step
                 )
-            elif cancelled:
+            else:
                 self._event(
-                    connection, task_id, "execution_cancelled", status, step
+                    connection,
+                    task_id,
+                    "step_checkpointed",
+                    status,
+                    step,
+                    f"Completed step '{step}'.",
                 )
         self.export_history(task_id)
         return self.get(task_id)
@@ -440,36 +463,71 @@ class ExecutionStore:
             connection.execute("BEGIN IMMEDIATE")
             row = self._require(connection, task_id)
             execution = self._decode(row)
-            errors = execution["errors"]
-            errors.append({"step": step, "message": message, "created_at": utc_now()})
-            checkpoints = execution["checkpoints"]
-            previous = checkpoints.get(step, {})
-            checkpoints[step] = {
-                "status": "failed",
-                "idempotency_key": previous.get(
-                    "idempotency_key", f"{task_id}:{step}"
-                ),
-                "error": message,
-            }
-            now = utc_now()
-            connection.execute(
-                """
-                UPDATE executions
-                SET status = ?, errors = ?, checkpoints = ?, updated_at = ?
-                WHERE task_id = ?
-                """,
-                (
-                    ExecutionStatus.FAILED,
-                    json.dumps(errors),
-                    json.dumps(checkpoints),
-                    now,
+            if execution["cancel_requested"]:
+                checkpoints = execution["checkpoints"]
+                previous = checkpoints.get(step, {})
+                checkpoints[step] = {
+                    "status": "cancelled",
+                    "idempotency_key": previous.get(
+                        "idempotency_key", f"{task_id}:{step}"
+                    ),
+                }
+                now = utc_now()
+                connection.execute(
+                    """
+                    UPDATE executions
+                    SET status = ?, cancel_requested = 0, pause_requested = 0,
+                        checkpoints = ?, updated_at = ?
+                    WHERE task_id = ?
+                    """,
+                    (
+                        ExecutionStatus.CANCELLED,
+                        json.dumps(checkpoints),
+                        now,
+                        task_id,
+                    ),
+                )
+                self._event(
+                    connection,
                     task_id,
-                ),
-            )
-            self._event(
-                connection, task_id, "execution_failed", ExecutionStatus.FAILED,
-                step, message,
-            )
+                    "execution_cancelled",
+                    ExecutionStatus.CANCELLED,
+                    step,
+                )
+                cancelled = True
+            else:
+                cancelled = False
+            if not cancelled:
+                errors = execution["errors"]
+                errors.append({"step": step, "message": message, "created_at": utc_now()})
+                checkpoints = execution["checkpoints"]
+                previous = checkpoints.get(step, {})
+                checkpoints[step] = {
+                    "status": "failed",
+                    "idempotency_key": previous.get(
+                        "idempotency_key", f"{task_id}:{step}"
+                    ),
+                    "error": message,
+                }
+                now = utc_now()
+                connection.execute(
+                    """
+                    UPDATE executions
+                    SET status = ?, errors = ?, checkpoints = ?, updated_at = ?
+                    WHERE task_id = ?
+                    """,
+                    (
+                        ExecutionStatus.FAILED,
+                        json.dumps(errors),
+                        json.dumps(checkpoints),
+                        now,
+                        task_id,
+                    ),
+                )
+                self._event(
+                    connection, task_id, "execution_failed", ExecutionStatus.FAILED,
+                    step, message,
+                )
         self.export_history(task_id)
         return self.get(task_id)
 

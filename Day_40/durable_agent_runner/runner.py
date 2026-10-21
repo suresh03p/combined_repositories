@@ -1,10 +1,18 @@
 import json
 from concurrent.futures import Future, ThreadPoolExecutor
-from threading import Lock
+from math import isfinite
+from queue import Empty, Queue
+from threading import BoundedSemaphore, Lock, Thread
+from time import monotonic
 from typing import Any, Callable
 from uuid import uuid4
 
-from .handoffs import make_handoff, validate_handoff
+from .handoffs import (
+    AgentHandoffError,
+    HandoffValidationError,
+    make_handoff,
+    validate_handoff,
+)
 from .models import ExecutionStatus, StepContext
 from .store import ExecutionNotFound, ExecutionStore, IdempotencyConflict
 
@@ -52,8 +60,23 @@ class DurableAgentRunner:
         step_handlers: dict[str, StepHandler] | None = None,
         max_workers: int = 4,
         recover_on_start: bool = True,
+        step_timeout: float = 30.0,
+        retry_budget: int = 1,
     ) -> None:
         self.store = store
+        if (
+            isinstance(step_timeout, bool)
+            or not isinstance(step_timeout, (int, float))
+            or not isfinite(step_timeout)
+            or step_timeout <= 0
+        ):
+            raise ValueError("step_timeout must be a finite positive number.")
+        if (
+            isinstance(retry_budget, bool)
+            or not isinstance(retry_budget, int)
+            or retry_budget < 0
+        ):
+            raise ValueError("retry_budget must be a non-negative integer.")
         self.step_handlers = (
             step_handlers
             if step_handlers is not None
@@ -64,6 +87,9 @@ class DurableAgentRunner:
         self._executor = ThreadPoolExecutor(
             max_workers=max_workers, thread_name_prefix="durable-agent"
         )
+        self.step_timeout = step_timeout
+        self.retry_budget = retry_budget
+        self._handler_slots = BoundedSemaphore(max_workers)
         self._lock = Lock()
         self._scheduled: dict[str, Future[None]] = {}
         if recover_on_start:
@@ -128,6 +154,10 @@ class DurableAgentRunner:
             execution = self.store.set_step_running(
                 task_id, step, idempotency_key
             )
+            if execution["status"] == ExecutionStatus.CANCELLED:
+                return
+            if execution["status"] == ExecutionStatus.WAITING:
+                return
             if execution["cancel_requested"]:
                 self.store.finish(task_id, ExecutionStatus.CANCELLED)
                 return
@@ -148,7 +178,22 @@ class DurableAgentRunner:
                 idempotency_key=idempotency_key,
             )
             try:
-                output = self.step_handlers[step](context)
+                for attempt in range(self.retry_budget + 1):
+                    try:
+                        output = self._invoke_step(self.step_handlers[step], context)
+                        break
+                    except (AgentHandoffError, HandoffValidationError):
+                        raise
+                    except Exception:
+                        execution = self.store.get(task_id)
+                        if execution["cancel_requested"]:
+                            self.store.finish(task_id, ExecutionStatus.CANCELLED)
+                            return
+                        if execution["pause_requested"]:
+                            self.store.finish(task_id, ExecutionStatus.WAITING)
+                            return
+                        if attempt == self.retry_budget:
+                            raise
                 json.dumps(output, allow_nan=False)
                 validate_handoff(output, step, task_id)
             except Exception as error:
@@ -170,6 +215,40 @@ class DurableAgentRunner:
                 return
 
         self.store.finish(task_id, ExecutionStatus.COMPLETED)
+
+    def _invoke_step(self, handler: StepHandler, context: StepContext) -> Any:
+        deadline = monotonic() + self.step_timeout
+        if not self._handler_slots.acquire(timeout=self.step_timeout):
+            raise TimeoutError(
+                f"Step '{context.idempotency_key}' timed out waiting for a tool slot."
+            )
+
+        result: Queue[tuple[bool, Any]] = Queue(maxsize=1)
+
+        def invoke() -> None:
+            try:
+                result.put((True, handler(context)))
+            except BaseException as error:
+                result.put((False, error))
+            finally:
+                self._handler_slots.release()
+
+        worker = Thread(
+            target=invoke,
+            name=f"agent-step-{context.idempotency_key}",
+            daemon=True,
+        )
+        worker.start()
+        remaining = deadline - monotonic()
+        try:
+            succeeded, value = result.get(timeout=max(0.0, remaining))
+        except Empty as error:
+            raise TimeoutError(
+                f"Step '{context.idempotency_key}' exceeded {self.step_timeout:g} seconds."
+            ) from error
+        if succeeded:
+            return value
+        raise value
 
     def resume(self, task_id: str) -> dict[str, Any]:
         execution = self.store.queue_resume(task_id, STEP_NAMES[0])
